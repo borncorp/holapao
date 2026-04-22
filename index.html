@@ -329,13 +329,15 @@
     .skill-badge{display:inline-block;background:#fff;border:1px solid var(--gold);border-radius:20px;padding:5px 14px;font-size:.8rem;color:var(--navy);margin:.3rem;}
 
     /* ── COLLAPSIBLE ── */
-    .collapse-section{background:#fff;border-radius:16px;border:1px solid rgba(201,168,76,.25);margin-bottom:1rem;overflow:hidden;}
-    .collapse-header{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.4rem;cursor:pointer;background:#fff;border:none;width:100%;text-align:left;transition:background .2s;}
-    .collapse-header:hover{background:var(--cream);}
-    .collapse-header h4{margin:0;font-size:1rem;color:var(--navy);}
-    .collapse-header .ch-icon{font-size:1.1rem;color:var(--gold);transition:transform .3s;}
+    .collapse-section{background:#fff;border-radius:16px;border:2px solid rgba(201,168,76,.6);margin-bottom:1.2rem;overflow:hidden;box-shadow:0 4px 18px rgba(201,168,76,.12);}
+    .collapse-header{display:flex;align-items:center;justify-content:space-between;padding:1.3rem 1.6rem;cursor:pointer;background:linear-gradient(135deg,rgba(201,168,76,.13) 0%,rgba(201,168,76,.04) 100%);border:none;width:100%;text-align:left;transition:background .2s;}
+    .collapse-header:hover{background:linear-gradient(135deg,rgba(201,168,76,.22) 0%,rgba(201,168,76,.1) 100%);}
+    .collapse-header h4{margin:0;font-size:1.05rem;font-weight:700;color:var(--navy);}
+    .collapse-header .ch-hint{font-size:.72rem;color:var(--gold);letter-spacing:.5px;margin-right:.6rem;opacity:.85;}
+    .collapse-header.open .ch-hint{display:none;}
+    .collapse-header .ch-icon{font-size:1.2rem;color:var(--gold);transition:transform .3s;flex-shrink:0;}
     .collapse-header.open .ch-icon{transform:rotate(180deg);}
-    .collapse-body{display:none;padding:1.1rem 1.4rem 1.4rem;}
+    .collapse-body{display:none;padding:1.1rem 1.4rem 1.4rem;border-top:1px solid rgba(201,168,76,.2);}
     .collapse-body.open{display:block;}
 
     /* ── EVENT / COLLAB CARDS ── */
@@ -539,7 +541,10 @@
     <div class="collapse-section">
       <button class="collapse-header" onclick="toggleCollapse('events-body',this)">
         <h4>🎪 Events Hosted — See Paola in Action</h4>
-        <i class="fa fa-chevron-down ch-icon"></i>
+        <span class="d-flex align-items-center gap-2">
+          <span class="ch-hint">Tap to expand</span>
+          <i class="fa fa-chevron-down ch-icon"></i>
+        </span>
       </button>
       <div class="collapse-body" id="events-body">
         <p style="color:#666;font-size:.88rem;margin-bottom:1.4rem;">From intimate family shows to massive New Year's Eve countdowns — Paola has hosted it all.</p>
