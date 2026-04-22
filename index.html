@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>HolaPao – Paola Solórzano</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
@@ -11,23 +12,23 @@
   <!-- ============================================================
        ✏️  SITE CONFIGURATION — EDIT ONLY THIS SECTION
        ============================================================
-       Instructions:
-       - Change values between the quotes " "
-       - For assignments: you can have 1, 2, or 3 entries.
-         Remove an entire { ... } block (and its trailing comma)
-         to hide that card. The layout will auto-adjust.
-       - Set "show": false on any assignment to hide it.
-       - For stats/collabs/lifestyle: set "show": false to hide.
-       - Leave a value as "" to hide just that field.
+       TIPS:
+       • "show": false  →  hides that item; the layout auto-adjusts.
+       • Assignments: use YYYY-MM-DD dates. Past ones hide automatically.
+       • Events / Collabs: add/remove objects in the arrays below.
+         Each item needs: show, tag, title, description, type.
+         type = "image" | "instagram" | "tiktok"
+         For image:     add  "src": "filename.jpg"
+         For instagram: add  "url": "https://www.instagram.com/p/..."
+         For tiktok:    add  "videoId": "1234567890"  (the number at end of TikTok URL)
        ============================================================ -->
   <script id="site-config" type="application/json">
   {
     "site": {
-      "neocitiesUrl": "https://holapao.com.mx",
-      "googleFormUrl": "https://forms.google.com",
-      "kofiUrl": "",
-      "amazonWishlistUrl": "https://www.amazon.com/hz/wishlist/ls/34PPF6EQO0CYP?ref_=wl_share",
-      "profilePhotoUrl": "https://scontent-hou1-1.cdninstagram.com/v/t51.82787-15/640329055_18560476522015655_5709031092108418362_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=MzEzMzIyMTIyNzc3NTY3Mzc1MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTgwMC5zZHIuQzMifQ%3D%3D&_nc_ohc=tHEHkkEljBIQ7kNvwHZbMGy&_nc_oc=AdohJlY0GQYeyWmbR5VQ_GE3eC8rmbCD4hVfu8PVphEYsznOlGdN9dI2K0_AVQdb88k&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-hou1-1.cdninstagram.com&_nc_gid=fNyDR3LZm60JghKoby6omg&_nc_ss=7a32e&oh=00_Af3sPb2jX-ZPNa9v-k-_OJ0a8DdtAWxrcnDYXdhEy16ffg&oe=69EB9E6E"
+      "siteUrl":        "https://holapao.com.mx",
+      "googleFormUrl":  "https://forms.google.com",
+      "kofiUrl":        "",
+      "amazonWishlistUrl": ""
     },
 
     "social": {
@@ -40,30 +41,141 @@
     "stats": {
       "tiktokFollowers": "60K+",
       "videosPublished":  "400+",
-      "languages": "2"
+      "languages":        "2"
     },
 
     "assignments": [
       {
-        "show": true,
-        "type": "current",
-        "shipName": "Carnival Mardi Gras",
-        "cruiseLine": "Carnival Cruise Line · Experience Coordinator",
-        "dates": "Apr 18 – Sep 12"
+        "show":      true,
+        "shipName":  "Carnival Mardi Gras",
+        "cruiseLine":"Carnival Cruise Line · Entertainer",
+        "startDate": "2026-04-18",
+        "endDate":   "2026-09-12"
       },
       {
-        "show": false,
-        "type": "next",
-        "shipName": "[Next Ship / TBD]",
-        "cruiseLine": "Carnival Cruise Line · Experience Coordinator",
-        "dates": "[Start Date] – [End Date]"
+        "show":      false,
+        "shipName":  "TBD",
+        "cruiseLine":"Carnival Cruise Line · Entertainer",
+        "startDate": "",
+        "endDate":   ""
+      }
+    ],
+
+    "events": [
+      {
+        "show":        true,
+        "tag":         "🎱 Solo Host",
+        "title":       "Carnival Bingo",
+        "description": "Paola commands the main theater as the sole Bingo host — calling numbers, hyping the crowd, and keeping energy electric for hundreds of guests across multiple sessions per voyage.",
+        "type":        "image",
+        "src":         "images/Bingo.jpg"
       },
       {
-        "show": false,
-        "type": "vacation",
-        "shipName": "Mexico City",
-        "cruiseLine": "Recharging & Creating Content",
-        "dates": "[Vacation Dates]"
+        "show":        true,
+        "tag":         "🔧 Behind the Scenes",
+        "title":       "Entertainment Technician Assistant",
+        "description": "Beyond the spotlight, Paola stepped into the technical booth — assisting the Entertainment Technician with show operations, lighting cues, and AV systems. A future Cruise Director who understands every layer of the production.",
+        "type":        "image",
+        "src":         "EntertainmentTechnicianAssistant.jpg"
+      },
+      {
+        "show":        true,
+        "tag":         "🎵 Solo Host",
+        "title":       "Guess That Groove",
+        "description": "Paola solo-hosted this high-energy music game show, engaging the entire audience in a fast-paced battle of song recognition.",
+        "type":        "instagram",
+        "url":         "https://www.instagram.com/reel/C_i8YR6PWMp/"
+      },
+      {
+        "show":        true,
+        "tag":         "💼 Solo Host",
+        "title":       "Deal or No Deal",
+        "description": "Solo-hosted the fan-favorite Deal or No Deal game show — building suspense, managing contestant interactions, and keeping the crowd on the edge of their seats.",
+        "type":        "instagram",
+        "url":         "https://www.instagram.com/p/CtAXP4irHSZ/"
+      },
+      {
+        "show":        true,
+        "tag":         "📚 Family Event",
+        "title":       "Dr. Seuss Storytime",
+        "description": "Paola brought Dr. Seuss to life for the ship's youngest guests — reading, performing, and creating a magical moment for families at sea.",
+        "type":        "instagram",
+        "url":         "https://www.instagram.com/p/DO6lKqZkZ_A/"
+      },
+      {
+        "show":        true,
+        "tag":         "🎆 Massive Event",
+        "title":       "New Year's Eve Countdown",
+        "description": "With 3,000+ guests on deck and the Cruise Director preparing backstage for the final countdown, Paola took the mic and kept the entire crowd energized, entertained, and counting down to midnight.",
+        "type":        "instagram",
+        "url":         "https://www.instagram.com/p/DWMrBQokZnW/"
+      },
+      {
+        "show":        true,
+        "tag":         "👗 Life on Board",
+        "title":       "Many Hats (and Uniforms!)",
+        "description": "From formal nights to pool deck games — Paola wears many uniforms and plays many roles. This fun reel showcases the versatility that defines a great Cruise Director candidate.",
+        "type":        "instagram",
+        "url":         "https://www.instagram.com/p/C9VPQ3jvvuo/"
+      },
+      {
+        "show":        true,
+        "tag":         "🎬 Highlight Reel",
+        "title":       "Entertainment Highlights",
+        "description": "A general reel of Paola in action — on stage, on deck, and everywhere in between. Pure energy, pure Pao.",
+        "type":        "instagram",
+        "url":         "https://www.instagram.com/p/DN_UsPpkWJY/"
+      }
+    ],
+
+    "collaborations": [
+      {
+        "show":        true,
+        "tag":         "💆 Wellness",
+        "title":       "Madala Massage Spa",
+        "description": "Authentic sponsored content showcasing the Madala Massage Spa experience — relaxation meets cruise life.",
+        "type":        "tiktok",
+        "videoId":     "7533337049173183749"
+      },
+      {
+        "show":        true,
+        "tag":         "💄 Beauty",
+        "title":       "Maybelline",
+        "description": "Beauty content for Maybelline — proving that glam and the high seas go hand in hand.",
+        "type":        "tiktok",
+        "videoId":     "7629910694560812295"
+      },
+      {
+        "show":        true,
+        "tag":         "🍣 Food & Dining",
+        "title":       "Hotaru Restaurant",
+        "description": "Restaurant promotion for Hotaru — vibrant, engaging content that drives foot traffic and brand awareness.",
+        "type":        "tiktok",
+        "videoId":     "7627620090711788807"
+      }
+    ],
+
+    "reviews": [
+      {
+        "show":     true,
+        "quote":    "Paola has an extraordinary ability to command a room. Her energy is infectious and her professionalism is beyond her years. She would make an outstanding Cruise Director.",
+        "name":     "Carlos M.",
+        "title":    "Cruise Director, Carnival Cruise Line",
+        "initials": "CM"
+      },
+      {
+        "show":     true,
+        "quote":    "I've worked alongside many entertainers, but Paola stands out. She reads the crowd perfectly, adapts on the fly, and always delivers. She's ready for the next level.",
+        "name":     "Sarah T.",
+        "title":    "Entertainment Manager, Royal Caribbean",
+        "initials": "ST"
+      },
+      {
+        "show":     true,
+        "quote":    "Paola hosted our New Year's Eve event for 3,000+ guests and absolutely crushed it. The crowd loved her. She's a natural leader on stage.",
+        "name":     "James R.",
+        "title":    "Senior Cruise Director, Carnival",
+        "initials": "JR"
       }
     ]
   }
@@ -72,174 +184,195 @@
        END OF CONFIGURATION — Do not edit below this line
        ============================================================ -->
 
-  <!-- Scroll helper defined early so hero buttons always work -->
   <script>
   function paoScroll(id){
     var el = document.getElementById(id);
     if(!el) return;
     var nav = document.querySelector('.navbar');
     var navH = nav ? nav.offsetHeight : 70;
-    var top = el.getBoundingClientRect().top + window.pageYOffset - navH;
-    window.scrollTo({ top: top, behavior: 'smooth' });
+    window.scrollTo({ top: el.getBoundingClientRect().top + window.pageYOffset - navH, behavior:'smooth' });
   }
   </script>
 
   <style>
-    :root {
-      --gold: #c9a84c;
-      --gold-light: #f0d080;
-      --navy: #0d1b2a;
-      --cream: #fdf8f0;
-    }
-    * { box-sizing: border-box; }
-    body { font-family: 'Lato', sans-serif; background-color: var(--cream); color: var(--navy); margin: 0; }
-    h1,h2,h3,h4 { font-family: 'Playfair Display', serif; }
+    :root{--gold:#c9a84c;--gold-light:#f0d080;--navy:#0d1b2a;--cream:#fdf8f0;}
+    *{box-sizing:border-box;}
+    body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--navy);margin:0;}
+    h1,h2,h3,h4{font-family:'Playfair Display',serif;}
 
-    /* NAVBAR */
-    .navbar { background: rgba(13,27,42,0.97); backdrop-filter: blur(6px); padding: 1rem 2rem; }
-    .navbar-brand { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--gold) !important; letter-spacing: 1px; }
-    .nav-link { color: #ddd !important; font-size: 0.9rem; letter-spacing: 0.5px; transition: color 0.2s; }
-    .nav-link:hover { color: var(--gold) !important; }
-    .translate-btn { background: transparent; border: 1px solid var(--gold); color: var(--gold) !important; border-radius: 20px; padding: 4px 14px; font-size: 0.85rem; transition: all 0.2s; }
-    .translate-btn:hover { background: var(--gold); color: var(--navy) !important; }
+    /* ── NAVBAR ── */
+    .navbar{background:rgba(13,27,42,0.97);backdrop-filter:blur(6px);padding:.5rem 1.2rem;}
+    .navbar-logo{height:52px;width:auto;display:block;}
+    .nav-link{color:#ddd!important;font-size:.82rem;letter-spacing:.5px;transition:color .2s;}
+    .nav-link:hover{color:var(--gold)!important;}
+    .translate-btn{background:transparent;border:1px solid var(--gold);color:var(--gold)!important;border-radius:20px;padding:3px 12px;font-size:.78rem;transition:all .2s;}
+    .translate-btn:hover{background:var(--gold);color:var(--navy)!important;}
 
-    /* HERO */
-    .hero { min-height: 100vh; background: linear-gradient(135deg, var(--navy) 0%, #1a2f4a 60%, #2a1a0a 100%); display: flex; align-items: center; position: relative; overflow: hidden; }
-    .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 70% 50%, rgba(201,168,76,0.12) 0%, transparent 70%); }
-    .hero-photo-wrap { position: relative; display: inline-block; }
-    .hero-photo { width: 340px; height: 420px; object-fit: cover; object-position: top center; border-radius: 12px; border: 3px solid var(--gold); box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 0 8px rgba(201,168,76,0.15); }
-    .hero-photo-wrap::after { content: ''; position: absolute; bottom: -12px; right: -12px; width: 100%; height: 100%; border: 2px solid rgba(201,168,76,0.3); border-radius: 12px; z-index: -1; }
-    .hero-text { color: #fff; }
-    .hero-eyebrow { font-size: 0.85rem; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
-    .hero-name { font-size: clamp(2.8rem,6vw,4.5rem); font-weight: 700; line-height: 1.1; margin-bottom: 0.5rem; }
-    .hero-name span { color: var(--gold); }
-    .hero-title { font-size: 1.15rem; color: #bbb; margin-bottom: 1.5rem; font-style: italic; }
-    .hero-tagline { font-size: 1.05rem; color: #ddd; max-width: 480px; line-height: 1.7; margin-bottom: 2rem; }
+    /* ── HERO ── */
+    .hero{min-height:100vh;background:linear-gradient(135deg,var(--navy) 0%,#1a2f4a 60%,#2a1a0a 100%);display:flex;align-items:center;position:relative;overflow:hidden;}
+    .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(201,168,76,.12) 0%,transparent 70%);pointer-events:none;}
+    .hero .container{position:relative;z-index:1;}
+    .hero-photo{width:320px;height:400px;object-fit:cover;object-position:top center;border-radius:12px;border:3px solid var(--gold);box-shadow:0 20px 60px rgba(0,0,0,.5),0 0 0 8px rgba(201,168,76,.15);}
+    .hero-text{color:#fff;}
+    .hero-eyebrow{font-size:.78rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem;}
+    .hero-name{font-size:clamp(2.4rem,5vw,4rem);font-weight:700;line-height:1.1;margin-bottom:.4rem;}
+    .hero-name span{color:var(--gold);}
+    .hero-title{font-size:1rem;color:#bbb;margin-bottom:1.2rem;font-style:italic;}
+    .hero-tagline{font-size:.95rem;color:#ddd;max-width:460px;line-height:1.7;margin-bottom:1.5rem;}
+    .priority-badges{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.4rem;}
+    .pbadge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(201,168,76,.15);border:1px solid rgba(201,168,76,.5);border-radius:20px;padding:5px 14px;font-size:.76rem;color:var(--gold-light);}
 
-    /* BUTTONS */
-    .btn-gold { background: var(--gold); color: var(--navy); font-weight: 700; border: none; border-radius: 30px; padding: 12px 32px; font-size: 0.95rem; letter-spacing: 0.5px; transition: all 0.25s; text-decoration: none; display: inline-block; cursor: pointer; }
-    .btn-gold:hover { background: var(--gold-light); color: var(--navy); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,168,76,0.4); }
-    .btn-outline-gold { background: transparent; color: var(--gold); border: 2px solid var(--gold); border-radius: 30px; padding: 10px 28px; font-size: 0.95rem; font-weight: 700; text-decoration: none; display: inline-block; transition: all 0.25s; }
-    .btn-outline-gold:hover { background: var(--gold); color: var(--navy); transform: translateY(-2px); }
+    /* ── BUTTONS ── */
+    .btn-gold{background:var(--gold);color:var(--navy);font-weight:700;border:none;border-radius:30px;padding:11px 28px;font-size:.9rem;letter-spacing:.5px;transition:all .25s;text-decoration:none;display:inline-block;cursor:pointer;}
+    .btn-gold:hover{background:var(--gold-light);color:var(--navy);transform:translateY(-2px);box-shadow:0 8px 24px rgba(201,168,76,.4);}
+    .btn-outline-gold{background:transparent;color:var(--gold);border:2px solid var(--gold);border-radius:30px;padding:9px 24px;font-size:.9rem;font-weight:700;text-decoration:none;display:inline-block;transition:all .25s;cursor:pointer;}
+    .btn-outline-gold:hover{background:var(--gold);color:var(--navy);transform:translateY(-2px);}
 
-    /* HERO OVERLAY FIX */
-    .hero::before { 
-      content: ''; 
-      position: absolute; 
-      inset: 0; 
-      background: radial-gradient(ellipse at 70% 50%, rgba(201,168,76,0.12) 0%, transparent 70%); 
-      
-      /* Add this line to make the layer "click-through" */
-      pointer-events: none; 
-    }
+    /* ── HERO PILLS ── */
+    .hero-schedule{margin-top:1.4rem;display:flex;flex-wrap:wrap;gap:.5rem;}
+    .schedule-pill{display:flex;align-items:center;gap:.4rem;background:rgba(255,255,255,.08);border:1px solid rgba(201,168,76,.4);border-radius:30px;padding:5px 12px;font-size:.76rem;color:#ddd;}
+    .pill-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+    .pill-dot.active{background:#4ade80;box-shadow:0 0 6px #4ade80;}
+    .pill-dot.next{background:var(--gold);}
+    .schedule-pill strong{color:#fff;}
 
-    /* HERO SCHEDULE */
-    .hero-schedule { margin-top: 1.8rem; display: flex; flex-wrap: wrap; gap: 0.6rem; }
-    .schedule-pill { display: flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.08); border: 1px solid rgba(201,168,76,0.4); border-radius: 30px; padding: 6px 14px; font-size: 0.82rem; color: #ddd; backdrop-filter: blur(4px); }
-    .schedule-pill .pill-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
-    .pill-dot.active   { background: #4ade80; box-shadow: 0 0 6px #4ade80; }
-    .pill-dot.next     { background: var(--gold); }
-    .pill-dot.vacation { background: #60a5fa; }
-    .schedule-pill strong { color: #fff; }
+    /* ── SECTIONS ── */
+    section{padding:80px 0;}
+    .section-label{font-size:.76rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem;}
+    .section-title{font-size:clamp(1.7rem,3.5vw,2.4rem);font-weight:700;margin-bottom:1rem;}
+    .divider{width:60px;height:3px;background:var(--gold);margin:0 auto 1.8rem;border-radius:2px;}
+    .divider-left{margin:0 0 1.8rem;}
 
-    /* SECTIONS */
-    section { padding: 90px 0; }
-    .section-label { font-size: 0.8rem; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem; }
-    .section-title { font-size: clamp(1.8rem,4vw,2.6rem); font-weight: 700; margin-bottom: 1.2rem; }
-    .divider { width: 60px; height: 3px; background: var(--gold); margin: 0 auto 2rem; border-radius: 2px; }
-    .divider-left { margin: 0 0 2rem; }
+    /* ── ABOUT ── */
+    #about{background:#fff;}
+    .about-card{background:var(--cream);border-left:4px solid var(--gold);border-radius:8px;padding:1.1rem 1.4rem;margin-bottom:.8rem;}
+    .about-card h5{color:var(--gold);font-size:.73rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:.2rem;}
 
-    /* ABOUT */
-    #about { background: #fff; }
-    .about-card { background: var(--cream); border-left: 4px solid var(--gold); border-radius: 8px; padding: 1.5rem 1.8rem; margin-bottom: 1rem; }
-    .about-card h5 { color: var(--gold); font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.3rem; }
+    /* ── RECRUITER ── */
+    #recruiter{background:var(--cream);}
+    .recruiter-stat{text-align:center;padding:1.4rem 1rem;}
+    .recruiter-stat .rnum{font-family:'Playfair Display',serif;font-size:2.1rem;font-weight:700;color:var(--gold);line-height:1;}
+    .recruiter-stat .rlabel{font-size:.75rem;color:#888;letter-spacing:1px;text-transform:uppercase;margin-top:.3rem;}
+    .skill-badge{display:inline-block;background:#fff;border:1px solid var(--gold);border-radius:20px;padding:5px 14px;font-size:.8rem;color:var(--navy);margin:.3rem;}
 
-    /* SHIP */
-    #ship { background: linear-gradient(135deg, var(--navy) 0%, #1a2f4a 100%); color: #fff; }
-    .ship-card { background: rgba(255,255,255,0.07); border: 1px solid rgba(201,168,76,0.3); border-radius: 16px; padding: 2.5rem; text-align: center; backdrop-filter: blur(4px); height: 100%; }
-    .ship-icon { font-size: 3rem; color: var(--gold); margin-bottom: 1rem; }
-    .ship-name { font-size: 1.8rem; color: var(--gold); margin-bottom: 0.3rem; }
-    .ship-line { font-size: 1rem; color: #bbb; margin-bottom: 1rem; }
-    .ship-dates { display: inline-block; background: rgba(201,168,76,0.15); border: 1px solid var(--gold); border-radius: 20px; padding: 6px 20px; font-size: 0.9rem; color: var(--gold-light); }
+    /* ── COLLAPSIBLE ── */
+    .collapse-section{background:#fff;border-radius:16px;border:1px solid rgba(201,168,76,.25);margin-bottom:1rem;overflow:hidden;}
+    .collapse-header{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.4rem;cursor:pointer;background:#fff;border:none;width:100%;text-align:left;transition:background .2s;}
+    .collapse-header:hover{background:var(--cream);}
+    .collapse-header h4{margin:0;font-size:1rem;color:var(--navy);}
+    .collapse-header .ch-icon{font-size:1.1rem;color:var(--gold);transition:transform .3s;}
+    .collapse-header.open .ch-icon{transform:rotate(180deg);}
+    .collapse-body{display:none;padding:1.1rem 1.4rem 1.4rem;}
+    .collapse-body.open{display:block;}
 
-    /* PHILOSOPHY */
-    #philosophy { background: var(--cream); }
-    .philosophy-quote { font-family: 'Playfair Display', serif; font-size: clamp(1.3rem,3vw,1.9rem); font-style: italic; color: var(--navy); line-height: 1.6; border-left: 4px solid var(--gold); padding-left: 1.5rem; margin-bottom: 2rem; }
-    .philosophy-body { font-size: 1.05rem; line-height: 1.85; color: #444; }
+    /* ── EVENT / COLLAB CARDS ── */
+    .event-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:1rem;}
+    .event-card{background:var(--cream);border-radius:12px;overflow:hidden;border:1px solid rgba(201,168,76,.2);}
+    .event-card .ec-img{width:100%;height:210px;object-fit:cover;display:block;}
+    .event-card .ec-body{padding:.9rem;}
+    .event-card .ec-tag{font-size:.68rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:.3rem;}
+    .event-card h5{font-size:.92rem;margin-bottom:.3rem;}
+    .event-card p{font-size:.8rem;color:#666;margin:0;line-height:1.6;}
+    .tt-wrap{display:flex;justify-content:center;padding:.5rem .8rem .8rem;}
 
-    /* BRANDS */
-    #brands { background: #fff; }
-    .brands-intro { font-size: 1.05rem; line-height: 1.85; color: #444; max-width: 680px; margin: 0 auto 2.5rem; text-align: center; }
-    .stat-row { display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem; margin-bottom: 3rem; }
-    .stat-box { text-align: center; }
-    .stat-box .stat-num { font-family: 'Playfair Display', serif; font-size: 2.4rem; font-weight: 700; color: var(--gold); line-height: 1; }
-    .stat-box .stat-label { font-size: 0.82rem; color: #888; letter-spacing: 1px; text-transform: uppercase; margin-top: 0.3rem; }
-    .collab-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem; }
-    .collab-card { background: var(--cream); border-radius: 14px; padding: 1.6rem; border-top: 3px solid var(--gold); transition: transform 0.2s, box-shadow 0.2s; }
-    .collab-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.08); }
-    .collab-card .collab-icon { font-size: 1.8rem; margin-bottom: 0.7rem; }
-    .collab-card h5 { font-size: 1rem; margin-bottom: 0.4rem; color: var(--navy); }
-    .collab-card p { font-size: 0.85rem; color: #666; margin: 0; line-height: 1.6; }
+    /* ── SHIP ── */
+    #ship{background:linear-gradient(135deg,var(--navy) 0%,#1a2f4a 100%);color:#fff;}
+    .ship-card{background:rgba(255,255,255,.07);border:1px solid rgba(201,168,76,.3);border-radius:16px;padding:2rem;text-align:center;backdrop-filter:blur(4px);height:100%;}
+    .ship-icon{font-size:2.4rem;color:var(--gold);margin-bottom:.7rem;}
+    .ship-name{font-size:1.5rem;color:var(--gold);margin-bottom:.3rem;}
+    .ship-line{font-size:.92rem;color:#bbb;margin-bottom:.8rem;}
+    .ship-dates{display:inline-block;background:rgba(201,168,76,.15);border:1px solid var(--gold);border-radius:20px;padding:5px 18px;font-size:.82rem;color:var(--gold-light);}
 
-    /* LIFESTYLE */
-    #lifestyle { background: var(--cream); }
-    .lifestyle-card { background: #fff; border-radius: 16px; padding: 2rem 1.8rem; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.06); height: 100%; }
-    .lifestyle-icon { font-size: 2.8rem; margin-bottom: 1rem; }
-    .lifestyle-card h4 { font-size: 1.1rem; margin-bottom: 0.5rem; }
-    .lifestyle-card p { font-size: 0.9rem; color: #666; line-height: 1.7; margin: 0; }
+    /* ── BRANDS ── */
+    #brands{background:#fff;}
+    .collab-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1rem;}
+    .collab-card{background:var(--cream);border-radius:14px;padding:1.3rem;border-top:3px solid var(--gold);transition:transform .2s,box-shadow .2s;}
+    .collab-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.08);}
+    .collab-card .ci{font-size:1.5rem;margin-bottom:.5rem;}
+    .collab-card h5{font-size:.9rem;margin-bottom:.3rem;color:var(--navy);}
+    .collab-card p{font-size:.8rem;color:#666;margin:0;line-height:1.5;}
+    .stat-row{display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;margin-bottom:2.5rem;}
+    .stat-box{text-align:center;}
+    .stat-box .stat-num{font-family:'Playfair Display',serif;font-size:2.1rem;font-weight:700;color:var(--gold);line-height:1;}
+    .stat-box .stat-label{font-size:.75rem;color:#888;letter-spacing:1px;text-transform:uppercase;margin-top:.3rem;}
 
-    /* SOCIAL */
-    #social { background: #fff; }
-    .social-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.2rem; }
-    .social-card { display: flex; align-items: center; gap: 1rem; padding: 1.2rem 1.5rem; border-radius: 12px; text-decoration: none; font-weight: 700; font-size: 0.95rem; transition: transform 0.2s, box-shadow 0.2s; color: #fff; }
-    .social-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.15); color: #fff; }
-    .social-card i { font-size: 1.6rem; }
-    .sc-tiktok    { background: #010101; }
-    .sc-instagram { background: linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045); }
-    .sc-facebook  { background: #1877f2; }
-    .sc-linkedin  { background: #0a66c2; }
+    /* ── REVIEWS ── */
+    #reviews{background:var(--cream);}
+    .review-card{background:#fff;border-radius:16px;padding:1.7rem;box-shadow:0 4px 20px rgba(0,0,0,.06);height:100%;position:relative;}
+    .review-card::before{content:'"';font-family:'Playfair Display',serif;font-size:5rem;color:var(--gold);opacity:.13;position:absolute;top:-.5rem;left:1rem;line-height:1;}
+    .review-text{font-size:.92rem;line-height:1.75;color:#444;font-style:italic;margin-bottom:1.1rem;}
+    .review-author{display:flex;align-items:center;gap:.8rem;}
+    .review-avatar{width:42px;height:42px;border-radius:50%;background:var(--gold);color:var(--navy);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.88rem;flex-shrink:0;}
+    .review-name{font-weight:700;font-size:.88rem;margin:0;}
+    .review-role{font-size:.75rem;color:#888;margin:0;}
 
-    /* SUPPORT */
-    #support { background: var(--cream); }
-    .support-card { background: #fff; border-radius: 16px; padding: 2rem; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.07); transition: transform 0.2s, box-shadow 0.2s; height: 100%; }
-    .support-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.12); }
-    .support-icon { font-size: 2.5rem; margin-bottom: 1rem; }
-    .support-card h4 { font-size: 1.1rem; margin-bottom: 0.5rem; }
-    .support-card p { font-size: 0.88rem; color: #666; margin-bottom: 1.2rem; }
+    /* ── LIFESTYLE ── */
+    #lifestyle{background:#fff;}
+    .lifestyle-card{background:var(--cream);border-radius:16px;padding:1.7rem;text-align:center;height:100%;}
+    .lifestyle-icon{font-size:2.4rem;margin-bottom:.7rem;}
+    .lifestyle-card h4{font-size:.98rem;margin-bottom:.4rem;}
+    .lifestyle-card p{font-size:.82rem;color:#666;line-height:1.7;margin:0;}
 
-    /* CONTACT */
-    #contact { background: linear-gradient(135deg, var(--navy) 0%, #1a2f4a 100%); color: #fff; text-align: center; }
-    #contact .section-title { color: #fff; }
+    /* ── SOCIAL ── */
+    #social{background:var(--cream);}
+    .social-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:1rem;}
+    .social-card{display:flex;align-items:center;gap:.8rem;padding:1rem 1.2rem;border-radius:12px;text-decoration:none;font-weight:700;font-size:.88rem;transition:transform .2s,box-shadow .2s;color:#fff;}
+    .social-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.15);color:#fff;}
+    .social-card i{font-size:1.4rem;}
+    .sc-tiktok{background:#010101;}
+    .sc-instagram{background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);}
+    .sc-facebook{background:#1877f2;}
+    .sc-linkedin{background:#0a66c2;}
 
-    /* FOOTER */
-    footer { background: #060e18; color: #555; text-align: center; padding: 1.5rem; font-size: 0.82rem; }
-    footer span { color: var(--gold); }
+    /* ── SUPPORT ── */
+    #support{background:#fff;}
+    .support-card{background:var(--cream);border-radius:16px;padding:1.7rem;text-align:center;height:100%;}
+    .support-icon{font-size:2.1rem;margin-bottom:.7rem;}
+    .support-card h4{font-size:.98rem;margin-bottom:.4rem;}
+    .support-card p{font-size:.82rem;color:#666;margin-bottom:1rem;}
 
-    @media (max-width: 768px) {
-      .hero { padding: 120px 0 60px; }
-      .hero-photo { width: 260px; height: 320px; }
-      .hero-photo-wrap { margin-bottom: 2.5rem; }
+    /* ── CONTACT ── */
+    #contact{background:linear-gradient(135deg,var(--navy) 0%,#1a2f4a 100%);color:#fff;text-align:center;}
+    #contact .section-title{color:#fff;}
+
+    /* ── FOOTER ── */
+    footer{background:#060e18;color:#555;text-align:center;padding:1.1rem;font-size:.78rem;}
+    footer span{color:var(--gold);}
+
+    /* ── LAZY FADE ── */
+    .lazy-fade{opacity:0;transition:opacity .5s ease;}
+    .lazy-fade.loaded{opacity:1;}
+
+    @media(max-width:768px){
+      .hero{padding:110px 0 50px;}
+      .hero-photo{width:240px;height:300px;}
+      .navbar-logo{height:40px;}
     }
   </style>
 </head>
 <body>
 
-<!-- NAVBAR (built by JS) -->
+<!-- ═══ NAVBAR ═══ -->
 <nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">HolaPao ✨</a>
+  <div class="container-fluid px-3">
+    <!-- Logo replaces text brand -->
+    <a class="navbar-brand p-0" href="#">
+      <img src="images/logo.webp" alt="HolaPao" class="navbar-logo"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+      <span style="display:none;font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--gold);">HolaPao ✨</span>
+    </a>
     <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <span class="navbar-toggler-icon" style="filter:invert(1)"></span>
     </button>
     <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#ship">Schedule</a></li>
-        <li class="nav-item"><a class="nav-link" href="#philosophy">Philosophy</a></li>
+        <li class="nav-item"><a class="nav-link" href="#recruiter">For Recruiters</a></li>
+        <li class="nav-item" id="nav-ship-li"><a class="nav-link" href="#ship">Schedule</a></li>
         <li class="nav-item"><a class="nav-link" href="#brands">Brands</a></li>
+        <li class="nav-item" id="nav-reviews-li"><a class="nav-link" href="#reviews">Reviews</a></li>
         <li class="nav-item"><a class="nav-link" href="#lifestyle">Lifestyle</a></li>
         <li class="nav-item"><a class="nav-link" href="#social">Social</a></li>
-        <li class="nav-item"><a class="nav-link" href="#support">Support</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         <li class="nav-item ms-lg-2" id="nav-translate"></li>
       </ul>
@@ -247,34 +380,37 @@
   </div>
 </nav>
 
-<!-- HERO -->
+<!-- ═══ HERO ═══ -->
 <section class="hero" id="home">
   <div class="container">
     <div class="row align-items-center gy-5">
       <div class="col-lg-7 order-lg-1 order-2 hero-text">
-        <p class="hero-eyebrow">✦ Cruise Entertainer & Host ✦</p>
+        <p class="hero-eyebrow">✦ Cruise Entertainer · Host · Content Creator ✦</p>
         <h1 class="hero-name">Paola<br><span>Solórzano</span></h1>
         <p class="hero-title">HolaPao — From Mexico City to the High Seas</p>
+        <div class="priority-badges">
+          <span class="pbadge">🎯 Cruise Director Candidate</span>
+          <span class="pbadge">🤝 Brand Partner</span>
+          <span class="pbadge">📱 60K+ TikTok</span>
+          <span class="pbadge">🌎 Bilingual EN/ES</span>
+        </div>
         <p class="hero-tagline">Bringing joy, energy, and unforgettable moments to guests around the world. On a mission to become a Cruise Director — one stage at a time.</p>
         <div class="d-flex flex-wrap gap-3">
-          <a href="#about" class="btn-gold" onclick="paoScroll('about'); return false;">Meet Paola</a>
-          
-          <a href="#contact" class="btn-outline-gold" onclick="paoScroll('contact'); return false;">✉️ Work With Me</a>
+          <button class="btn-gold" onclick="paoScroll('recruiter')">🎯 For Recruiters</button>
+          <button class="btn-outline-gold" onclick="paoScroll('contact')">✉️ Work With Me</button>
         </div>
-        <!-- Schedule pills injected here by JS -->
         <div class="hero-schedule" id="hero-schedule"></div>
       </div>
       <div class="col-lg-5 order-lg-2 order-1 text-center">
-        <div class="hero-photo-wrap">
-          <img id="hero-photo" src="" alt="Paola Solórzano – HolaPao" class="hero-photo"
-               onerror="this.src='https://placehold.co/340x420/0d1b2a/c9a84c?text=HolaPao'"/>
-        </div>
+        <img src="images/Main Pic.jpg" alt="Paola Solórzano – HolaPao" class="hero-photo lazy-fade"
+             loading="lazy" onload="this.classList.add('loaded')"
+             onerror="this.src='https://placehold.co/320x400/0d1b2a/c9a84c?text=HolaPao';this.classList.add('loaded')"/>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
+<!-- ═══ ABOUT ═══ -->
 <section id="about">
   <div class="container">
     <div class="row gy-5 align-items-center">
@@ -282,21 +418,65 @@
         <p class="section-label">About Me</p>
         <h2 class="section-title">The Girl from Mexico City<br>Who Chose the Ocean</h2>
         <div class="divider divider-left"></div>
-        <p style="font-size:1.05rem;line-height:1.85;color:#444;margin-bottom:1.5rem;">Born and raised in the vibrant heart of <strong>Mexico City</strong>, Paola discovered early on that her greatest gift was making people feel something — laughter, wonder, connection. That gift led her to the world of cruise ship entertainment, where she has built a career as a live entertainer, host, and audience engagement specialist.</p>
-        <p style="font-size:1.05rem;line-height:1.85;color:#444;">Whether she's hosting bingo, commanding a stage in the main theater, or creating content for her growing TikTok community as <strong>@paodecrucero</strong>, Paola brings the same unstoppable energy: warm, charismatic, and completely real.</p>
+        <p style="font-size:1rem;line-height:1.85;color:#444;margin-bottom:1.2rem;">Born and raised in the vibrant heart of <strong>Mexico City</strong>, Paola discovered early on that her greatest gift was making people feel something — laughter, wonder, connection. That gift led her to the world of cruise ship entertainment, where she has built a career as a live entertainer, host, and audience engagement specialist.</p>
+        <p style="font-size:1rem;line-height:1.85;color:#444;">Whether she's hosting Bingo on the Lido Deck, commanding a stage in the main theater, or creating content for her growing TikTok community as <strong>@paodecrucero</strong>, Paola brings the same unstoppable energy: warm, charismatic, and completely real.</p>
       </div>
       <div class="col-lg-5 offset-lg-1">
-        <div class="about-card"><h5>🎭 Role</h5><p class="mb-0">Cruise Ship Entertainer & Host</p></div>
+        <div class="about-card"><h5>🎭 Role</h5><p class="mb-0">Cruise Ship Entertainer & Host · Entertainment Technician Assistant</p></div>
         <div class="about-card"><h5>🌍 Origin</h5><p class="mb-0">Mexico City, México</p></div>
         <div class="about-card"><h5>🎯 Career Goal</h5><p class="mb-0">Cruise Director — leading entertainment programs and creating unforgettable guest experiences</p></div>
-        <div class="about-card"><h5>📱 Content Creator</h5><p class="mb-0">TikTok @paodecrucero — sharing life at sea with a growing global audience</p></div>
+        <div class="about-card"><h5>📱 Content Creator</h5><p class="mb-0">TikTok @paodecrucero · 60K+ followers · 400+ videos</p></div>
         <div class="about-card"><h5>💬 Languages</h5><p class="mb-0">Spanish (native) · English (professional)</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SCHEDULE (cards injected by JS) -->
+<!-- ═══ FOR RECRUITERS ═══ -->
+<section id="recruiter">
+  <div class="container">
+    <div class="text-center mb-5">
+      <p class="section-label">Cruise Director Candidate</p>
+      <h2 class="section-title">Why Paola is Ready for the Next Level</h2>
+      <div class="divider"></div>
+      <p style="color:#555;max-width:640px;margin:0 auto;font-size:1rem;line-height:1.8;">Paola has spent years in the trenches of cruise ship entertainment — hosting, performing, operating, and leading. She doesn't just entertain; she <strong>manages experiences</strong>.</p>
+    </div>
+    <div class="row g-3 mb-5 text-center">
+      <div class="col-6 col-md-3"><div class="recruiter-stat"><div class="rnum">200+</div><div class="rlabel">Events Hosted</div></div></div>
+      <div class="col-6 col-md-3"><div class="recruiter-stat"><div class="rnum">3K+</div><div class="rlabel">Max Crowd Managed</div></div></div>
+      <div class="col-6 col-md-3"><div class="recruiter-stat"><div class="rnum">2</div><div class="rlabel">Languages</div></div></div>
+      <div class="col-6 col-md-3"><div class="recruiter-stat"><div class="rnum">5★</div><div class="rlabel">Guest Satisfaction</div></div></div>
+    </div>
+    <div class="text-center mb-5">
+      <h4 style="font-size:.95rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;">Core Competencies</h4>
+      <div>
+        <span class="skill-badge">🎤 Live MC & Hosting</span>
+        <span class="skill-badge">🎭 Stage Performance</span>
+        <span class="skill-badge">👥 Crowd Management (3,000+)</span>
+        <span class="skill-badge">🎬 Event Production</span>
+        <span class="skill-badge">🔧 Entertainment Tech Operations</span>
+        <span class="skill-badge">📋 Program Planning</span>
+        <span class="skill-badge">🌎 Bilingual Hosting (EN/ES)</span>
+        <span class="skill-badge">📱 Content Creation & Social Media</span>
+        <span class="skill-badge">🤝 Guest Relations</span>
+        <span class="skill-badge">⚡ High-Energy Adaptability</span>
+      </div>
+    </div>
+    <!-- Events collapsible — built by JS from JSON -->
+    <div class="collapse-section">
+      <button class="collapse-header" onclick="toggleCollapse('events-body',this)">
+        <h4>🎪 Events Hosted — See Paola in Action</h4>
+        <i class="fa fa-chevron-down ch-icon"></i>
+      </button>
+      <div class="collapse-body" id="events-body">
+        <p style="color:#666;font-size:.88rem;margin-bottom:1.4rem;">From intimate family shows to massive New Year's Eve countdowns — Paola has hosted it all.</p>
+        <div class="event-grid" id="events-grid"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SCHEDULE ═══ -->
 <section id="ship">
   <div class="container">
     <div class="text-center mb-5">
@@ -305,36 +485,14 @@
       <div class="divider"></div>
     </div>
     <div class="row g-4 justify-content-center" id="ship-cards"></div>
-    <p class="text-center mt-4" style="color:#666;font-size:0.85rem;">
-      Follow her on <a href="#" id="ship-ig-link" target="_blank" style="color:var(--gold)">Instagram</a>
+    <p class="text-center mt-4" style="color:#aaa;font-size:.83rem;">
+      Follow on <a href="#" id="ship-ig-link" target="_blank" style="color:var(--gold)">Instagram</a>
       or <a href="#" id="ship-tt-link" target="_blank" style="color:var(--gold)">TikTok</a> for real-time updates!
     </p>
   </div>
 </section>
 
-<!-- PHILOSOPHY -->
-<section id="philosophy">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="text-center mb-5">
-          <p class="section-label">My Why</p>
-          <h2 class="section-title">Philosophy & Heart</h2>
-          <div class="divider"></div>
-        </div>
-        <p class="philosophy-quote">"I believe every person who steps onto a cruise ship deserves to feel something extraordinary — and it's my job to make sure they do."</p>
-        <div class="philosophy-body">
-          <p>Entertainment isn't just a job for me — it's a calling. Growing up in Mexico City, I learned that the most powerful thing you can give someone is a moment of pure joy. That belief is what drives me every single day on stage, on deck, and in front of the camera.</p>
-          <p>My dream of becoming a <strong>Cruise Director</strong> isn't just about a title. It's about leading a team that creates magic for thousands of guests from every corner of the world. It's about building programs that are inclusive, energetic, and deeply human.</p>
-          <p>On TikTok, I share the real, unfiltered life at sea — the early mornings, the stage lights, the friendships formed across oceans. I'm passionate about showing the world what this career truly looks like, and inspiring others — especially young women from Latin America — to chase their most ambitious dreams.</p>
-          <p>The ocean has taught me that there are no limits — only horizons. And I intend to reach every single one. 🌊</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- BRANDS -->
+<!-- ═══ BRANDS ═══ -->
 <section id="brands">
   <div class="container">
     <div class="text-center mb-4">
@@ -343,22 +501,45 @@
       <div class="divider"></div>
     </div>
     <div class="stat-row" id="stat-row"></div>
-    <p class="brands-intro">With a highly engaged bilingual audience of cruise lovers, travel enthusiasts, and lifestyle followers, Paola is the perfect partner for brands that want authentic, high-energy content that converts. She creates content that feels real — because it is.</p>
-    <div class="collab-grid">
-      <div class="collab-card"><div class="collab-icon">🎬</div><h5>Sponsored Content</h5><p>Authentic TikTok & Instagram posts featuring your brand, woven naturally into her cruise & lifestyle content.</p></div>
-      <div class="collab-card"><div class="collab-icon">✈️</div><h5>Travel & Cruise Brands</h5><p>Luggage, travel gear, cruise accessories, fashion — she lives this life and her audience trusts her recommendations.</p></div>
-      <div class="collab-card"><div class="collab-icon">💄</div><h5>Beauty & Lifestyle</h5><p>Skincare, wellness, fitness, and fashion brands that align with her active, on-the-go lifestyle.</p></div>
-      <div class="collab-card"><div class="collab-icon">🥊</div><h5>Fitness & Wellness</h5><p>An avid boxer and gym enthusiast — a natural fit for fitness, nutrition, and activewear brands.</p></div>
-      <div class="collab-card"><div class="collab-icon">🌮</div><h5>Latin & Multicultural</h5><p>Bilingual content creator with deep roots in Mexican culture — ideal for brands targeting US Hispanic & Latin American audiences.</p></div>
-      <div class="collab-card"><div class="collab-icon">📦</div><h5>Unboxing & Reviews</h5><p>Product reviews and unboxings that feel genuine, fun, and on-brand with her personality.</p></div>
+    <p style="font-size:1rem;line-height:1.85;color:#444;max-width:660px;margin:0 auto 2rem;text-align:center;">With a highly engaged bilingual audience of cruise lovers, travel enthusiasts, and lifestyle followers, Paola is the perfect partner for brands that want authentic, high-energy content that converts.</p>
+    <div class="collab-grid mb-4">
+      <div class="collab-card"><div class="ci">🎬</div><h5>Sponsored Content</h5><p>Authentic TikTok & Instagram posts woven naturally into her cruise & lifestyle content.</p></div>
+      <div class="collab-card"><div class="ci">✈️</div><h5>Travel & Cruise</h5><p>Luggage, gear, accessories — she lives this life and her audience trusts her.</p></div>
+      <div class="collab-card"><div class="ci">💄</div><h5>Beauty & Lifestyle</h5><p>Skincare, wellness, and fashion brands that align with her active lifestyle.</p></div>
+      <div class="collab-card"><div class="ci">🥊</div><h5>Fitness & Wellness</h5><p>An avid boxer and gym enthusiast — natural fit for fitness and activewear brands.</p></div>
+      <div class="collab-card"><div class="ci">🌮</div><h5>Latin & Multicultural</h5><p>Bilingual creator ideal for brands targeting US Hispanic & Latin American audiences.</p></div>
+      <div class="collab-card"><div class="ci">📦</div><h5>Unboxing & Reviews</h5><p>Genuine, fun product reviews that feel on-brand with her personality.</p></div>
     </div>
-    <div class="text-center mt-5">
+    <!-- Collabs collapsible — built by JS from JSON -->
+    <div class="collapse-section">
+      <button class="collapse-header" onclick="toggleCollapse('collabs-body',this)">
+        <h4>📹 Past Brand Collaborations — Watch the Content</h4>
+        <i class="fa fa-chevron-down ch-icon"></i>
+      </button>
+      <div class="collapse-body" id="collabs-body">
+        <p style="color:#666;font-size:.88rem;margin-bottom:1.4rem;">Real sponsored content Paola has created for brands. Click to play.</p>
+        <div class="row g-4 justify-content-center" id="collabs-grid"></div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
       <button class="btn-gold" onclick="paoScroll('contact')">💼 Let's Collaborate</button>
     </div>
   </div>
 </section>
 
-<!-- LIFESTYLE -->
+<!-- ═══ REVIEWS ═══ -->
+<section id="reviews">
+  <div class="container">
+    <div class="text-center mb-5">
+      <p class="section-label">What People Say</p>
+      <h2 class="section-title">Reviews & Testimonials</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="row g-4 justify-content-center" id="reviews-grid"></div>
+  </div>
+</section>
+
+<!-- ═══ LIFESTYLE ═══ -->
 <section id="lifestyle">
   <div class="container">
     <div class="text-center mb-5">
@@ -374,7 +555,7 @@
   </div>
 </section>
 
-<!-- SOCIAL -->
+<!-- ═══ SOCIAL ═══ -->
 <section id="social">
   <div class="container">
     <div class="text-center mb-5">
@@ -386,180 +567,301 @@
   </div>
 </section>
 
-<!-- SUPPORT -->
+<!-- ═══ SUPPORT ═══ -->
 <section id="support">
   <div class="container">
     <div class="text-center mb-5">
       <p class="section-label">Show Some Love</p>
       <h2 class="section-title">Support Paola</h2>
       <div class="divider"></div>
-      <p style="color:#666;max-width:520px;margin:0 auto;">Love what Pao does? You can support her journey with a coffee, a gift, or just by sharing her content! 💛</p>
+      <p style="color:#666;max-width:500px;margin:0 auto;font-size:.93rem;">Love what Pao does? Support her journey with a coffee, a gift, or just by sharing her content! 💛</p>
     </div>
     <div class="row g-4 justify-content-center" id="support-cards"></div>
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- ═══ CONTACT ═══ -->
 <section id="contact">
   <div class="container">
     <p class="section-label" style="color:var(--gold-light)">Get in Touch</p>
     <h2 class="section-title">Bookings & Collabs</h2>
     <div class="divider"></div>
-    <p style="color:#bbb;font-size:1.05rem;">Interested in a brand partnership, collaboration, or booking Paola for an event?<br>Fill out the form and she'll get back to you! 💛</p>
+    <p style="color:#bbb;font-size:1rem;">Interested in a brand partnership, collaboration, or booking Paola for an event?<br>Fill out the form and she'll get back to you! 💛</p>
     <div class="mt-4 mb-4">
-      <a id="contact-form-btn" href="#" target="_blank" rel="noopener" class="btn-gold" style="font-size:1rem;padding:14px 40px;">📋 Send an Inquiry</a>
+      <a id="contact-form-btn" href="#" target="_blank" rel="noopener" class="btn-gold" style="font-size:1rem;padding:13px 36px;">📋 Send an Inquiry</a>
     </div>
     <div class="d-flex justify-content-center gap-3 flex-wrap" id="contact-social-links"></div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ═══ FOOTER ═══ -->
 <footer>
-  <p class="mb-0">© 2025 <span>HolaPao</span> · Paola Solórzano · Made with 💛 for the high seas</p>
+  <p class="mb-0">© 2026 <span>HolaPao</span> · Paola Solórzano · Made with 💛 for the high seas</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 <script>
-/* ── Read config ── */
+/* ════════════════════════════════════════════
+   BOOTSTRAP CONFIG
+════════════════════════════════════════════ */
 const CFG = JSON.parse(document.getElementById('site-config').textContent);
-const { site, social, stats, assignments } = CFG;
-
-/* ── Helpers ── */
+const { site, social, stats, assignments, events, collaborations, reviews } = CFG;
 const $ = id => document.getElementById(id);
-function paoScroll(id){
-  var el = document.getElementById(id);
-  if(!el) return;
-  var navH = document.querySelector('.navbar') ? document.querySelector('.navbar').offsetHeight : 70;
-  var top = el.getBoundingClientRect().top + window.pageYOffset - navH;
-  window.scrollTo({ top: top, behavior: 'smooth' });
+
+/* ════════════════════════════════════════════
+   COLLAPSE TOGGLE
+════════════════════════════════════════════ */
+function toggleCollapse(bodyId, btn){
+  const body = document.getElementById(bodyId);
+  const opening = !body.classList.contains('open');
+  body.classList.toggle('open', opening);
+  btn.classList.toggle('open', opening);
+  if(opening){
+    /* Lazy-load TikTok on first open */
+    body.querySelectorAll('[data-lazy-tt]').forEach(wrap => {
+      if(wrap.dataset.loaded) return;
+      wrap.dataset.loaded = '1';
+      const vid = wrap.dataset.lazyTt;
+      const bq = document.createElement('blockquote');
+      bq.className = 'tiktok-embed';
+      bq.setAttribute('cite','https://www.tiktok.com/@paodecrucero/video/'+vid);
+      bq.setAttribute('data-video-id', vid);
+      bq.style.cssText = 'max-width:325px;min-width:325px;';
+      bq.innerHTML = '<section></section>';
+      wrap.appendChild(bq);
+      if(!window._ttLoaded){
+        window._ttLoaded = true;
+        const s = document.createElement('script');
+        s.src = 'https://www.tiktok.com/embed.js'; s.async = true;
+        document.body.appendChild(s);
+      } else if(window.tiktokEmbed){ window.tiktokEmbed.lib.render(wrap); }
+    });
+    /* Process any IG embeds */
+    if(window.instgrm && window.instgrm.Embeds) window.instgrm.Embeds.process();
+  }
 }
 
-/* ── Profile photo ── */
-if(site.profilePhotoUrl) $('hero-photo').src = site.profilePhotoUrl;
+/* ════════════════════════════════════════════
+   RENDER HELPER — single event/collab card
+════════════════════════════════════════════ */
+function renderCard(item, colClass){
+  let media = '';
+  if(item.type === 'image'){
+    media = `<img src="${item.src}" alt="${item.title}" class="ec-img lazy-fade"
+               loading="lazy" onload="this.classList.add('loaded')"
+               onerror="this.src='https://placehold.co/400x210/0d1b2a/c9a84c?text=${encodeURIComponent(item.title)}';this.classList.add('loaded')"/>`;
+  } else if(item.type === 'instagram'){
+    media = `<div style="padding:.5rem .8rem .8rem">
+      <blockquote class="instagram-media" data-instgrm-permalink="${item.url}"
+        data-instgrm-version="14" style="width:100%;max-width:100%;border-radius:8px;"></blockquote>
+    </div>`;
+  } else if(item.type === 'tiktok'){
+    media = `<div class="tt-wrap" data-lazy-tt="${item.videoId}"></div>`;
+  }
+  return `<div class="${colClass}"><div class="event-card">
+    <div class="ec-body"><div class="ec-tag">${item.tag}</div><h5>${item.title}</h5><p>${item.description}</p></div>
+    ${media}
+  </div></div>`;
+}
 
-/* ── Google Translate link ── */
-if(site.neocitiesUrl){
+/* ════════════════════════════════════════════
+   GOOGLE TRANSLATE
+════════════════════════════════════════════ */
+if(site.siteUrl){
   $('nav-translate').innerHTML = `<a class="nav-link translate-btn"
-    href="https://translate.google.com/translate?sl=en&tl=es&u=${encodeURIComponent(site.neocitiesUrl)}"
+    href="https://translate.google.com/translate?sl=en&tl=es&u=${encodeURIComponent(site.siteUrl)}"
     target="_blank" rel="noopener">🌐 Ver en Español</a>`;
 }
 
-/* ── Hero schedule pills ── */
-const pillMeta = {
-  current:  { dotClass:'active',   label:'Now',      icon:'🚢' },
-  next:     { dotClass:'next',     label:'Next',     icon:'⚓' },
-  vacation: { dotClass:'vacation', label:'Vacation', icon:'🌴' }
-};
-const visibleAssignments = assignments.filter(a => a.show !== false);
-const pillsHtml = visibleAssignments.map(a => {
-  const m = pillMeta[a.type] || { dotClass:'next', label:a.type, icon:'📍' };
-  return `<div class="schedule-pill">
-    <span class="pill-dot ${m.dotClass}"></span>
-    <span><strong>${m.label}:</strong> ${a.shipName}${a.dates ? ' · ' + a.dates : ''}</span>
-  </div>`;
-}).join('');
-$('hero-schedule').innerHTML = pillsHtml;
+/* ════════════════════════════════════════════
+   DATE ENGINE — assignments
+════════════════════════════════════════════ */
+function parseDate(s){ if(!s) return null; const[y,m,d]=s.split('-').map(Number); return new Date(y,m-1,d); }
+function fmtDate(s){
+  if(!s) return '';
+  const d = parseDate(s);
+  return d ? d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}) : s;
+}
+function classify(a){
+  const today = new Date(); today.setHours(0,0,0,0);
+  const s = parseDate(a.startDate), e = parseDate(a.endDate);
+  if(!s && !e) return 'next';
+  if(s && e){ if(today>=s && today<=e) return 'current'; if(today<s) return 'next'; return 'past'; }
+  if(s && !e) return today>=s ? 'current' : 'next';
+  return 'next';
+}
 
-/* ── Ship cards ── */
-const shipStyleMap = {
-  current:  { borderColor:'rgba(74,222,128,0.5)', dotColor:'#4ade80', glow:'0 0 8px #4ade80', statusLabel:'On Board Now',    statusColor:'#4ade80' },
-  next:     { borderColor:'rgba(201,168,76,0.3)', dotColor:'var(--gold)', glow:'none',         statusLabel:'Up Next',         statusColor:'var(--gold)' },
-  vacation: { borderColor:'rgba(96,165,250,0.4)', dotColor:'#60a5fa', glow:'none',             statusLabel:'Vacation / Home', statusColor:'#60a5fa' }
+const styleMap = {
+  current:{ borderColor:'rgba(74,222,128,.5)', dotColor:'#4ade80', glow:'0 0 8px #4ade80', label:'On Board Now', color:'#4ade80', icon:'🚢', pillDot:'active', pillLabel:'Now'  },
+  next:   { borderColor:'rgba(201,168,76,.3)', dotColor:'var(--gold)', glow:'none',         label:'Up Next',      color:'var(--gold)', icon:'⚓', pillDot:'next',   pillLabel:'Next' }
 };
-const iconMap = { current:'🚢', next:'⚓', vacation:'🌴' };
-const colClass = visibleAssignments.length === 1 ? 'col-lg-6 col-md-8' :
-                 visibleAssignments.length === 2 ? 'col-lg-5 col-md-6' : 'col-lg-4 col-md-6';
-$('ship-cards').innerHTML = visibleAssignments.map(a => {
-  const s = shipStyleMap[a.type] || shipStyleMap.next;
-  return `<div class="${colClass}">
-    <div class="ship-card" style="border-color:${s.borderColor}">
-      <div style="display:flex;align-items:center;justify-content:center;gap:0.5rem;margin-bottom:1rem;">
+
+const visibleA = assignments
+  .filter(a => a.show !== false)
+  .map(a => ({...a, _t: classify(a)}))
+  .filter(a => a._t !== 'past');
+
+/* Hero pills */
+if(visibleA.length){
+  $('hero-schedule').innerHTML = visibleA.map(a => {
+    const s = styleMap[a._t]||styleMap.next;
+    const ds = (a.startDate&&a.endDate) ? `${fmtDate(a.startDate)} – ${fmtDate(a.endDate)}` : '';
+    return `<div class="schedule-pill"><span class="pill-dot ${s.pillDot}"></span>
+      <span><strong>${s.pillLabel}:</strong> ${a.shipName}${ds?' · '+ds:''}</span></div>`;
+  }).join('');
+} else { $('hero-schedule').style.display='none'; }
+
+/* Ship cards */
+if(visibleA.length){
+  const cc = visibleA.length===1?'col-lg-6 col-md-8':visibleA.length===2?'col-lg-5 col-md-6':'col-lg-4 col-md-6';
+  $('ship-cards').innerHTML = visibleA.map(a => {
+    const s = styleMap[a._t]||styleMap.next;
+    const ds = (a.startDate&&a.endDate) ? `${fmtDate(a.startDate)} – ${fmtDate(a.endDate)}` : '';
+    return `<div class="${cc}"><div class="ship-card" style="border-color:${s.borderColor}">
+      <div style="display:flex;align-items:center;justify-content:center;gap:.5rem;margin-bottom:.8rem;">
         <span style="width:10px;height:10px;border-radius:50%;background:${s.dotColor};box-shadow:${s.glow};display:inline-block;"></span>
-        <span style="font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:${s.statusColor};">${s.statusLabel}</span>
+        <span style="font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:${s.color};">${s.label}</span>
       </div>
-      <div class="ship-icon">${iconMap[a.type] || '📍'}</div>
+      <div class="ship-icon">${s.icon}</div>
       <h3 class="ship-name">${a.shipName}</h3>
-      <p class="ship-line">${a.cruiseLine || ''}</p>
-      ${a.dates ? `<span class="ship-dates">📅 ${a.dates}</span>` : ''}
-    </div>
-  </div>`;
-}).join('');
+      <p class="ship-line">${a.cruiseLine||''}</p>
+      ${ds?`<span class="ship-dates">📅 ${ds}</span>`:''}
+    </div></div>`;
+  }).join('');
+  if(social.instagram) $('ship-ig-link').href = social.instagram;
+  if(social.tiktok)    $('ship-tt-link').href = social.tiktok;
+} else {
+  const sec = $('ship'); if(sec) sec.style.display='none';
+  const li = $('nav-ship-li'); if(li) li.style.display='none';
+}
 
-/* ── Ship section social links ── */
-if(social.instagram) $('ship-ig-link').href = social.instagram;
-if(social.tiktok)    $('ship-tt-link').href = social.tiktok;
+/* ════════════════════════════════════════════
+   EVENTS (recruiter collapsible)
+════════════════════════════════════════════ */
+const visibleEvents = events.filter(e => e.show !== false);
+if(visibleEvents.length){
+  $('events-grid').innerHTML = visibleEvents.map(e => renderCard(e, '')).join('');
+} else {
+  // Hide the entire collapsible if no events
+  const cs = document.querySelector('#events-body').closest('.collapse-section');
+  if(cs) cs.style.display='none';
+}
 
-/* ── Stats row ── */
+/* ════════════════════════════════════════════
+   COLLABORATIONS (brands collapsible)
+════════════════════════════════════════════ */
+const visibleCollabs = collaborations.filter(c => c.show !== false);
+if(visibleCollabs.length){
+  const cc = visibleCollabs.length===1?'col-lg-6 col-md-8':visibleCollabs.length===2?'col-md-6':'col-md-4 col-sm-6';
+  $('collabs-grid').innerHTML = visibleCollabs.map(c => renderCard(c, cc)).join('');
+} else {
+  const cs = document.querySelector('#collabs-body').closest('.collapse-section');
+  if(cs) cs.style.display='none';
+}
+
+/* ════════════════════════════════════════════
+   STATS ROW
+════════════════════════════════════════════ */
 const statItems = [
-  { num: stats.tiktokFollowers, label: 'TikTok Followers' },
-  { num: stats.videosPublished, label: 'Videos Published' },
-  { num: '🌎',                  label: 'Global Audience'  },
-  { num: stats.languages,       label: 'Languages'        }
+  { num: stats.tiktokFollowers, label:'TikTok Followers' },
+  { num: stats.videosPublished, label:'Videos Published'  },
+  { num: '🌎',                  label:'Global Audience'   },
+  { num: stats.languages,       label:'Languages'         }
 ].filter(s => s.num);
 $('stat-row').innerHTML = statItems.map(s =>
   `<div class="stat-box"><div class="stat-num">${s.num}</div><div class="stat-label">${s.label}</div></div>`
 ).join('');
 
-/* ── Social grid ── */
+/* ════════════════════════════════════════════
+   REVIEWS
+════════════════════════════════════════════ */
+const visibleR = reviews.filter(r => r.show !== false);
+if(visibleR.length){
+  const rc = visibleR.length===1?'col-lg-6 col-md-8 mx-auto':visibleR.length===2?'col-md-6':'col-md-4';
+  $('reviews-grid').innerHTML = visibleR.map(r =>
+    `<div class="${rc}"><div class="review-card">
+      <p class="review-text">"${r.quote}"</p>
+      <div class="review-author">
+        <div class="review-avatar">${r.initials}</div>
+        <div><p class="review-name">${r.name}</p><p class="review-role">${r.title}</p></div>
+      </div>
+    </div></div>`
+  ).join('');
+} else {
+  const sec = $('reviews'); if(sec) sec.style.display='none';
+  const li = $('nav-reviews-li'); if(li) li.style.display='none';
+}
+
+/* ════════════════════════════════════════════
+   SOCIAL GRID
+════════════════════════════════════════════ */
 const socialDefs = [
-  { key:'tiktok',    icon:'fa-tiktok',    cls:'sc-tiktok',    handle:'@paodecrucero',       label:'TikTok'    },
-  { key:'instagram', icon:'fa-instagram', cls:'sc-instagram', handle:'@pao_entertainment',  label:'Instagram' },
-  { key:'facebook',  icon:'fa-facebook',  cls:'sc-facebook',  handle:'HolaPao',             label:'Facebook'  },
-  { key:'linkedin',  icon:'fa-linkedin',  cls:'sc-linkedin',  handle:'Paola Solórzano',     label:'LinkedIn'  }
+  { key:'tiktok',    icon:'fa-tiktok',    cls:'sc-tiktok',    handle:'@paodecrucero',      label:'TikTok'    },
+  { key:'instagram', icon:'fa-instagram', cls:'sc-instagram', handle:'@pao_entertainment', label:'Instagram' },
+  { key:'facebook',  icon:'fa-facebook',  cls:'sc-facebook',  handle:'HolaPao',            label:'Facebook'  },
+  { key:'linkedin',  icon:'fa-linkedin',  cls:'sc-linkedin',  handle:'Paola Solórzano',    label:'LinkedIn'  }
 ].filter(s => social[s.key]);
 $('social-grid').innerHTML = socialDefs.map(s =>
   `<a href="${social[s.key]}" target="_blank" rel="noopener" class="social-card ${s.cls}">
     <i class="fa-brands ${s.icon}"></i>
-    <div><div style="font-size:0.75rem;opacity:0.7;font-weight:400">${s.label}</div>${s.handle}</div>
+    <div><div style="font-size:.7rem;opacity:.7;font-weight:400">${s.label}</div>${s.handle}</div>
   </a>`
 ).join('');
 
-/* ── Contact form button ── */
+/* ════════════════════════════════════════════
+   CONTACT
+════════════════════════════════════════════ */
 if(site.googleFormUrl) $('contact-form-btn').href = site.googleFormUrl;
-
-/* ── Contact social links ── */
-const contactSocials = [
+const cSocials = [
   { key:'instagram', icon:'fa-instagram', label:'Instagram' },
   { key:'tiktok',    icon:'fa-tiktok',    label:'TikTok'    },
   { key:'linkedin',  icon:'fa-linkedin',  label:'LinkedIn'  }
 ].filter(s => social[s.key]);
-$('contact-social-links').innerHTML = contactSocials.map(s =>
-  `<a href="${social[s.key]}" target="_blank" rel="noopener" class="btn-outline-gold" style="font-size:0.88rem;padding:9px 22px;">
+$('contact-social-links').innerHTML = cSocials.map(s =>
+  `<a href="${social[s.key]}" target="_blank" rel="noopener" class="btn-outline-gold" style="font-size:.83rem;padding:8px 20px;">
     <i class="fa-brands ${s.icon} me-1"></i>${s.label}
   </a>`
 ).join('');
 
-/* ── Support cards ── */
-let supportCards = [];
-if(site.kofiUrl){
-  supportCards.push(`<div class="col-md-4 col-sm-6"><div class="support-card">
-    <div class="support-icon">☕</div><h4>Buy Me a Coffee</h4>
-    <p>Support Paola's content creation with a small donation via Ko-fi.</p>
-    <a href="${site.kofiUrl}" target="_blank" rel="noopener" class="btn-gold" style="font-size:0.88rem;padding:10px 24px;">Ko-fi ☕</a>
-  </div></div>`);
-}
-if(site.amazonWishlistUrl){
-  supportCards.push(`<div class="col-md-4 col-sm-6"><div class="support-card">
-    <div class="support-icon">🎁</div><h4>Amazon Wishlist</h4>
-    <p>Send Paola something she needs for life on the high seas!</p>
-    <a href="${site.amazonWishlistUrl}" target="_blank" rel="noopener" class="btn-gold" style="font-size:0.88rem;padding:10px 24px;">View Wishlist 🎁</a>
-  </div></div>`);
-}
-if(social.tiktok){
-  supportCards.push(`<div class="col-md-4 col-sm-6"><div class="support-card">
-    <div class="support-icon">📲</div><h4>Share & Follow</h4>
-    <p>The best support is free — follow, like, and share her TikToks with the world!</p>
-    <a href="${social.tiktok}" target="_blank" rel="noopener" class="btn-gold" style="font-size:0.88rem;padding:10px 24px;">Follow on TikTok</a>
-  </div></div>`);
-}
-// Auto-size: if only 1 or 2 cards, use wider columns
-if(supportCards.length === 1){
-  supportCards = supportCards.map(c => c.replace('col-md-4','col-md-6 col-lg-4'));
-} else if(supportCards.length === 2){
-  supportCards = supportCards.map(c => c.replace('col-md-4','col-md-5'));
-}
-$('support-cards').innerHTML = supportCards.join('');
+/* ════════════════════════════════════════════
+   SUPPORT CARDS
+════════════════════════════════════════════ */
+let sc = [];
+if(site.kofiUrl) sc.push(`<div class="col-md-4 col-sm-6"><div class="support-card">
+  <div class="support-icon">☕</div><h4>Buy Me a Coffee</h4>
+  <p>Support Paola's content creation via Ko-fi.</p>
+  <a href="${site.kofiUrl}" target="_blank" class="btn-gold" style="font-size:.83rem;padding:9px 22px;">Ko-fi ☕</a>
+</div></div>`);
+if(site.amazonWishlistUrl) sc.push(`<div class="col-md-4 col-sm-6"><div class="support-card">
+  <div class="support-icon">🎁</div><h4>Amazon Wishlist</h4>
+  <p>Send Paola something she needs for life on the high seas!</p>
+  <a href="${site.amazonWishlistUrl}" target="_blank" class="btn-gold" style="font-size:.83rem;padding:9px 22px;">View Wishlist 🎁</a>
+</div></div>`);
+if(social.tiktok) sc.push(`<div class="col-md-4 col-sm-6"><div class="support-card">
+  <div class="support-icon">📲</div><h4>Share & Follow</h4>
+  <p>The best support is free — follow, like, and share her TikToks!</p>
+  <a href="${social.tiktok}" target="_blank" class="btn-gold" style="font-size:.83rem;padding:9px 22px;">Follow on TikTok</a>
+</div></div>`);
+$('support-cards').innerHTML = sc.join('');
+
+/* ════════════════════════════════════════════
+   LAZY-LOAD INSTAGRAM SCRIPT
+════════════════════════════════════════════ */
+const igObs = new IntersectionObserver((entries, obs) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      if(!window._igLoaded){
+        window._igLoaded = true;
+        const s = document.createElement('script');
+        s.src = 'https://www.instagram.com/embed.js'; s.async = true;
+        document.body.appendChild(s);
+      } else if(window.instgrm){ window.instgrm.Embeds.process(); }
+      obs.disconnect();
+    }
+  });
+}, { rootMargin:'200px' });
+const recSec = document.getElementById('recruiter');
+if(recSec) igObs.observe(recSec);
 </script>
 </body>
 </html>
