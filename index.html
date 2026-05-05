@@ -36,29 +36,51 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Paola Solórzano Albarrán",
-    "alternateName": "HolaPao",
-    "url": "https://holapao.com.mx",
-    "image": "https://holapao.com.mx/images/MainPic.jpg",
-    "description": "Bilingual cruise ship entertainer, live host, and content creator from Mexico City, México. Currently serving as Entertainer on Carnival Mardi Gras (Carnival Cruise Line). Cruise Director candidate with 200+ events hosted and 60K+ TikTok followers.",
-    "jobTitle": "Cruise Ship Entertainer & Host",
-    "worksFor": { "@type": "Organization", "name": "Carnival Cruise Line" },
-    "nationality": { "@type": "Country", "name": "Mexico" },
-    "birthPlace": { "@type": "Place", "name": "Mexico City, México" },
-    "knowsLanguage": ["Spanish", "English"],
-    "sameAs": [
-      "https://www.tiktok.com/@paodecrucero",
-      "https://www.instagram.com/pao_entertainment/",
-      "https://www.facebook.com/profile.php?id=61552008703123",
-      "https://www.linkedin.com/in/paola-solorzano-albarran-905a54211"
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "Business Inquiries",
-      "url": "https://forms.gle/K9RUsnf3eos3Fang8"
-    }
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://holapao.com.mx/#website",
+        "url": "https://holapao.com.mx/",
+        "name": "Hola Pao - Cruise Ship Entertainer & Host",
+        "publisher": { "@id": "https://holapao.com.mx/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://holapao.com.mx/#person",
+        "name": "Paola Solórzano Albarrán",
+        "alternateName": "HolaPao",
+        "url": "https://holapao.com.mx",
+        "image": "https://holapao.com.mx/images/MainPic.jpg",
+        "description": "Bilingual cruise ship entertainer, live host, and content creator from Mexico City, México. Currently serving as Entertainer on Carnival Mardi Gras (Carnival Cruise Line). Cruise Director candidate with 200+ events hosted and 60K+ TikTok followers.",
+        "jobTitle": "Cruise Ship Entertainer & Host",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Carnival Cruise Line"
+        },
+        "nationality": {
+          "@type": "Country",
+          "name": "Mexico"
+        },
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Mexico City, México"
+        },
+        "knowsLanguage": ["Spanish", "English"],
+        "sameAs": [
+          "https://www.tiktok.com/@paodecrucero",
+          "https://www.instagram.com/pao_entertainment/",
+          "https://www.facebook.com/profile.php?id=61552008703123",
+          "https://www.linkedin.com/in/paola-solorzano-albarran-905a54211"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Business Inquiries",
+          "url": "https://forms.gle/K9RUsnf3eos3Fang8"
+        }
+      }
+    ]
   }
+    
   </script>
 
   <!-- Preconnect to CDN origins to reduce DNS/TCP latency -->
