@@ -3,35 +3,35 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hola Pao — Paola Solórzano · Fleet Content Creator</title>
+  <title>Hola Pao - Paola Solórzano Entertainment</title>
 
   <!-- ═══ SEO: Core ═══ -->
-  <meta name="description" content="Paola Solórzano (HolaPao) is a bilingual cruise content creator, on-camera host, and social storyteller. Currently onboard Carnival Mardi Gras. 60K+ TikTok followers, 400+ original videos. Available for Fleet Content Creator opportunities and brand partnerships."/>
+  <meta name="description" content="Paola Solórzano (HolaPao) is a bilingual cruise ship entertainer, live host, and content creator from Mexico City. Currently on Carnival Mardi Gras. 60K+ TikTok followers. Available for brand partnerships and cruise director opportunities."/>
   <meta name="author" content="Paola Solórzano Albarrán"/>
   <meta name="robots" content="index, follow"/>
   <link rel="canonical" href="https://holapao.com.mx/"/>
   <link rel="icon" type="image/x-icon" href="favicon.ico"/>
   <link rel="apple-touch-icon" href="images/logo.webp"/>
 
-  <!-- ═══ SEO: Open Graph ═══ -->
+  <!-- ═══ SEO: Open Graph (Facebook, LinkedIn, WhatsApp) ═══ -->
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://holapao.com.mx/"/>
-  <meta property="og:title" content="Hola Pao — Paola Solórzano · Fleet Content Creator"/>
-  <meta property="og:description" content="Bilingual cruise content creator & on-camera host. 60K+ TikTok followers, 400+ original videos. Onboard the Carnival fleet. Open to Fleet Content Creator roles and brand partnerships."/>
+  <meta property="og:title" content="Hola Pao - Paola Solórzano Entertainment"/>
+  <meta property="og:description" content="Bilingual cruise ship entertainer & host from Mexico City. On a mission to become a Cruise Director. 60K+ TikTok followers. Open to brand partnerships."/>
   <meta property="og:image" content="https://holapao.com.mx/images/MainPic.jpg"/>
-  <meta property="og:image:alt" content="Paola Solórzano — HolaPao, Cruise Content Creator"/>
+  <meta property="og:image:alt" content="Paola Solórzano - HolaPao, Cruise Ship Entertainer"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:locale:alternate" content="es_MX"/>
   <meta property="og:site_name" content="Hola Pao"/>
 
   <!-- ═══ SEO: Twitter / X Card ═══ -->
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Hola Pao — Paola Solórzano · Fleet Content Creator"/>
-  <meta name="twitter:description" content="Bilingual cruise content creator. 60K+ TikTok. 400+ videos. On camera and behind it across the Carnival fleet."/>
+  <meta name="twitter:title" content="Hola Pao - Paola Solórzano Entertainment"/>
+  <meta name="twitter:description" content="Bilingual cruise entertainer & host from Mexico City. 60K+ TikTok. Open to brand partnerships & cruise director roles."/>
   <meta name="twitter:image" content="https://holapao.com.mx/images/MainPic.jpg"/>
   <meta name="twitter:image:alt" content="Paola Solórzano – HolaPao"/>
 
-  <!-- ═══ SEO: Structured Data ═══ -->
+  <!-- ═══ SEO: Structured Data (JSON-LD / Schema.org) ═══ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -40,8 +40,8 @@
         "@type": "WebSite",
         "@id": "https://holapao.com.mx/#website",
         "url": "https://holapao.com.mx/",
-        "name": "Hola Pao — Paola Solórzano · Fleet Content Creator",
-        "alternateName": ["HolaPao", "Hola Pao Entertainment"],
+        "name": "Hola Pao - Paola Solórzano Entertainment",
+        "alternateName": ["HolaPao", "Hola Pao Entertainment", "Hola Pao - Paola Solórzano Entertainment"],
         "publisher": { "@id": "https://holapao.com.mx/#person" }
       },
       {
@@ -51,11 +51,20 @@
         "alternateName": "HolaPao",
         "url": "https://holapao.com.mx",
         "image": "https://holapao.com.mx/images/MainPic.jpg",
-        "description": "Paola Solórzano is a bilingual cruise content creator, on-camera host, and social storyteller known as HolaPao.",
-        "jobTitle": "Cruise Content Creator & On-Camera Host",
-        "worksFor": { "@type": "Organization", "name": "Carnival Cruise Line" },
-        "nationality": { "@type": "Country", "name": "Mexico" },
-        "birthPlace": { "@type": "Place", "name": "Mexico City, México" },
+        "description": "Paola Solórzano is a bilingual cruise ship entertainer and host known as HolaPao.",
+        "jobTitle": "Cruise Ship Entertainer & Host",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Carnival Cruise Line"
+        },
+        "nationality": {
+          "@type": "Country",
+          "name": "Mexico"
+        },
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Mexico City, México"
+        },
         "knowsLanguage": ["Spanish", "English"],
         "sameAs": [
           "https://www.tiktok.com/@paodecrucero",
@@ -71,27 +80,43 @@
       }
     ]
   }
+    
   </script>
 
-  <!-- Preconnect -->
+  <!-- Preconnect to CDN origins to reduce DNS/TCP latency -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net"/>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+
+  <!-- Preload LCP hero image so it loads as fast as possible -->
   <link rel="preload" as="image" href="images/MainPic.jpg"/>
 
+  <!-- Bootstrap CSS — async load to avoid render-blocking -->
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
   <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/></noscript>
 
+  <!-- Font Awesome — async load (major TBT contributor) -->
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
   <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/></noscript>
 
+  <!-- Google Fonts — async load with display=swap -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"/></noscript>
 
-  <!-- ====
-       ✏️  SITE CONFIGURATION
-       ==== -->
+  <!-- ============================================================
+       ✏️  SITE CONFIGURATION — EDIT ONLY THIS SECTION
+       ============================================================
+       TIPS:
+       • "show": false  →  hides that item; the layout auto-adjusts.
+       • Assignments: use YYYY-MM-DD dates. Past ones hide automatically.
+       • Events / Collabs: add/remove objects in the arrays below.
+         Each item needs: show, tag, title, description, type.
+         type = "image" | "instagram" | "tiktok"
+         For image:     add  "src": "filename.jpg"
+         For instagram: add  "url": "https://www.instagram.com/p/..."
+         For tiktok:    add  "videoId": "1234567890"  (the number at end of TikTok URL)
+       ============================================================ -->
   <script id="site-config" type="application/json">
   {
     "site": {
@@ -118,14 +143,14 @@
       {
         "show":      true,
         "shipName":  "Carnival Mardi Gras",
-        "cruiseLine":"Carnival Cruise Line · Experience Coordinator",
+        "cruiseLine":"Carnival Cruise Line · Entertainer",
         "startDate": "2026-04-18",
         "endDate":   "2026-09-12"
       },
       {
         "show":      false,
         "shipName":  "TBD",
-        "cruiseLine":"Carnival Cruise Line",
+        "cruiseLine":"Carnival Cruise Line · Entertainer",
         "startDate": "",
         "endDate":   ""
       }
@@ -134,65 +159,65 @@
     "events": [
       {
         "show":        true,
-        "tag":         "🎱 On-Camera Host",
+        "tag":         "🎱 Solo Host",
         "title":       "Carnival Bingo",
-        "description": "Paola hosts the main theater Bingo solo, the kind of high-energy, packed-room moment that translates into shareable short-form content for the fleet.",
+        "description": "Paola commands the main theater as the sole Bingo host — calling numbers, hyping the crowd, and keeping energy electric for hundreds of guests across multiple sessions per voyage.",
         "type":        "image",
         "src":         "images/Bingo.jpg"
       },
       {
         "show":        true,
-        "tag":         "🎬 Behind the Camera",
-        "title":       "Entertainment Tech Assistant",
-        "description": "Paola has worked alongside the Entertainment Technician on show ops, lighting cues, and AV — a content creator who understands how productions are actually built.",
+        "tag":         "🔧 Behind the Scenes",
+        "title":       "Entertainment Technician Assistant",
+        "description": "Beyond the spotlight, Paola stepped into the technical booth — assisting the Entertainment Technician with show operations, lighting cues, and AV systems. A future Cruise Director who understands every layer of the production.",
         "type":        "image",
         "src":         "images/EntertainmentTechnicianAssistant.jpg"
       },
       {
         "show":        true,
-        "tag":         "🎵 Capture in Action",
+        "tag":         "🎵 Solo Host",
         "title":       "Guess That Groove",
-        "description": "High-energy music game show, solo-hosted. The kind of fast-paced moment Paola knows how to frame, capture, and turn into platform-ready content.",
+        "description": "Paola solo-hosted this high-energy music game show, engaging the entire audience in a fast-paced battle of song recognition.",
         "type":        "instagram",
         "url":         "https://www.instagram.com/reel/C_i8YR6PWMp/"
       },
       {
         "show":        true,
-        "tag":         "💼 Capture in Action",
+        "tag":         "💼 Solo Host",
         "title":       "Deal or No Deal",
-        "description": "Suspense, reactions, contestant moments — exactly the emotional peaks that make great fleet content.",
+        "description": "Solo-hosted the fan-favorite Deal or No Deal game show — building suspense, managing contestant interactions, and keeping the crowd on the edge of their seats.",
         "type":        "instagram",
         "url":         "https://www.instagram.com/p/CtAXP4irHSZ/"
       },
       {
         "show":        true,
-        "tag":         "📚 Family Storytelling",
+        "tag":         "📚 Family Event",
         "title":       "Dr. Seuss Storytime",
-        "description": "A magical family-friendly moment at sea. Family milestones and onboard storytelling are core to the Carnival content library.",
+        "description": "Paola brought Dr. Seuss to life for the ship's youngest guests — reading, performing, and creating a magical moment for families at sea.",
         "type":        "instagram",
         "url":         "https://www.instagram.com/p/DO6lKqZkZ_A/"
       },
       {
         "show":        true,
-        "tag":         "🎆 Massive Moment",
+        "tag":         "🎆 Massive Event",
         "title":       "New Year's Eve Countdown",
-        "description": "3,000+ guests on deck. Paola knows how to read a crowd this big, recognize the peak moment, and frame it so it travels across every platform.",
+        "description": "With 3,000+ guests on deck and the Cruise Director preparing backstage for the final countdown, Paola took the mic and kept the entire crowd energized, entertained, and counting down to midnight.",
         "type":        "instagram",
         "url":         "https://www.instagram.com/p/DWMrBQokZnW/?img_index=5"
       },
       {
         "show":        true,
-        "tag":         "👗 Life Onboard",
+        "tag":         "👗 Life on Board",
         "title":       "Many Hats (and Uniforms!)",
-        "description": "A reel built from the kind of authentic, behind-the-scenes shipboard moments that fuel a strong onboard content library.",
+        "description": "From formal nights to pool deck games — Paola wears many uniforms and plays many roles. This fun reel showcases the versatility that defines a great Cruise Director candidate.",
         "type":        "instagram",
         "url":         "https://www.instagram.com/p/C9VPQ3jvvuo/"
       },
       {
         "show":        true,
         "tag":         "🎬 Highlight Reel",
-        "title":       "Cruise Content Highlights",
-        "description": "A general highlight reel — sail-aways, deck moments, and onboard energy. Pure cruise lifestyle storytelling.",
+        "title":       "Entertainment Highlights",
+        "description": "A general reel of Paola in action — on stage, on deck, and everywhere in between. Pure energy, pure Pao.",
         "type":        "instagram",
         "url":         "https://www.instagram.com/p/DN_UsPpkWJY/"
       }
@@ -203,7 +228,7 @@
         "show":        true,
         "tag":         "💆 Wellness",
         "title":       "Madala Massage Spa",
-        "description": "Sponsored content showcasing the spa experience — relaxation meets cruise lifestyle.",
+        "description": "Authentic sponsored content showcasing the Madala Massage Spa experience — relaxation meets cruise life.",
         "type":        "tiktok",
         "videoId":     "7533337049173183749"
       },
@@ -211,7 +236,7 @@
         "show":        true,
         "tag":         "💄 Beauty",
         "title":       "Maybelline",
-        "description": "Branded beauty content — glam meets the high seas, delivered in Paola's natural voice.",
+        "description": "Beauty content for Maybelline — proving that glam and the high seas go hand in hand.",
         "type":        "tiktok",
         "videoId":     "7629910694560812295"
       },
@@ -219,27 +244,51 @@
         "show":        true,
         "tag":         "🍣 Food & Dining",
         "title":       "Hotaru Restaurant",
-        "description": "Restaurant promo — vibrant, engaging content that drives awareness and foot traffic.",
+        "description": "Restaurant promotion for Hotaru — vibrant, engaging content that drives foot traffic and brand awareness.",
         "type":        "tiktok",
         "videoId":     "7627620090711788807"
       }
     ],
 
     "reviews": [
-      { "show": false, "quote": "", "name": "", "title": "", "initials": "" }
+      {
+        "show":     false,
+        "quote":    "Paola has an extraordinary ability to command a room. Her energy is infectious and her professionalism is beyond her years. She would make an outstanding Cruise Director.",
+        "name":     "Carlos M.",
+        "title":    "Cruise Director, Carnival Cruise Line",
+        "initials": "CM"
+      },
+      {
+        "show":     false,
+        "quote":    "I've worked alongside many entertainers, but Paola stands out. She reads the crowd perfectly, adapts on the fly, and always delivers. She's ready for the next level.",
+        "name":     "Sarah T.",
+        "title":    "Entertainment Manager, Royal Caribbean",
+        "initials": "ST"
+      },
+      {
+        "show":     false,
+        "quote":    "Paola hosted our New Year's Eve event for 3,000+ guests and absolutely crushed it. The crowd loved her. She's a natural leader on stage.",
+        "name":     "James R.",
+        "title":    "Senior Cruise Director, Carnival",
+        "initials": "JR"
+      }
     ]
   }
   </script>
+  <!-- ============================================================
+       END OF CONFIGURATION — Do not edit below this line
+       ============================================================ -->
 
-  <!-- Google tag -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-B20FWVHNP7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
+  
     gtag('config', 'G-B20FWVHNP7');
   </script>
-
+  
   <script>
   function paoScroll(id){
     var el = document.getElementById(id);
@@ -251,11 +300,12 @@
   </script>
 
   <style>
-    :root{--gold:#c9a84c;--gold-light:#f0d080;--navy:#0d1b2a;--cream:#fdf8f0;--red:#c8102e;}
-    {box-sizing:border-box;}
+    :root{--gold:#c9a84c;--gold-light:#f0d080;--navy:#0d1b2a;--cream:#fdf8f0;}
+    *{box-sizing:border-box;}
     body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--navy);margin:0;}
     h1,h2,h3,h4{font-family:'Playfair Display',serif;}
 
+    /* ── NAVBAR ── */
     .navbar{background:rgba(13,27,42,0.97);backdrop-filter:blur(6px);padding:.5rem 1.2rem;}
     .navbar-logo{height:52px;width:auto;display:block;}
     .nav-link{color:#ddd!important;font-size:.82rem;letter-spacing:.5px;transition:color .2s;}
@@ -263,6 +313,7 @@
     .translate-btn{background:transparent;border:1px solid var(--gold);color:var(--gold)!important;border-radius:20px;padding:3px 12px;font-size:.78rem;transition:all .2s;}
     .translate-btn:hover{background:var(--gold);color:var(--navy)!important;}
 
+    /* ── HERO ── */
     .hero{min-height:100vh;background:linear-gradient(135deg,var(--navy) 0%,#1a2f4a 60%,#2a1a0a 100%);display:flex;align-items:center;position:relative;overflow:hidden;}
     .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(201,168,76,.12) 0%,transparent 70%);pointer-events:none;}
     .hero .container{position:relative;z-index:1;}
@@ -272,15 +323,17 @@
     .hero-name{font-size:clamp(2.4rem,5vw,4rem);font-weight:700;line-height:1.1;margin-bottom:.4rem;}
     .hero-name span{color:var(--gold);}
     .hero-title{font-size:1rem;color:#bbb;margin-bottom:1.2rem;font-style:italic;}
-    .hero-tagline{font-size:.95rem;color:#ddd;max-width:480px;line-height:1.7;margin-bottom:1.5rem;}
+    .hero-tagline{font-size:.95rem;color:#ddd;max-width:460px;line-height:1.7;margin-bottom:1.5rem;}
     .priority-badges{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.4rem;}
     .pbadge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(201,168,76,.15);border:1px solid rgba(201,168,76,.5);border-radius:20px;padding:5px 14px;font-size:.76rem;color:var(--gold-light);}
 
+    /* ── BUTTONS ── */
     .btn-gold{background:var(--gold);color:var(--navy);font-weight:700;border:none;border-radius:30px;padding:11px 28px;font-size:.9rem;letter-spacing:.5px;transition:all .25s;text-decoration:none;display:inline-block;cursor:pointer;}
     .btn-gold:hover{background:var(--gold-light);color:var(--navy);transform:translateY(-2px);box-shadow:0 8px 24px rgba(201,168,76,.4);}
     .btn-outline-gold{background:transparent;color:var(--gold);border:2px solid var(--gold);border-radius:30px;padding:9px 24px;font-size:.9rem;font-weight:700;text-decoration:none;display:inline-block;transition:all .25s;cursor:pointer;}
     .btn-outline-gold:hover{background:var(--gold);color:var(--navy);transform:translateY(-2px);}
 
+    /* ── HERO PILLS ── */
     .hero-schedule{margin-top:1.4rem;display:flex;flex-wrap:wrap;gap:.5rem;}
     .schedule-pill{display:flex;align-items:center;gap:.4rem;background:rgba(255,255,255,.08);border:1px solid rgba(201,168,76,.4);border-radius:30px;padding:5px 12px;font-size:.76rem;color:#ddd;}
     .pill-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
@@ -288,27 +341,26 @@
     .pill-dot.next{background:var(--gold);}
     .schedule-pill strong{color:#fff;}
 
+    /* ── SECTIONS ── */
     section{padding:80px 0;}
     .section-label{font-size:.76rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem;}
     .section-title{font-size:clamp(1.7rem,3.5vw,2.4rem);font-weight:700;margin-bottom:1rem;}
     .divider{width:60px;height:3px;background:var(--gold);margin:0 auto 1.8rem;border-radius:2px;}
     .divider-left{margin:0 0 1.8rem;}
 
+    /* ── ABOUT ── */
     #about{background:#fff;}
     .about-card{background:var(--cream);border-left:4px solid var(--gold);border-radius:8px;padding:1.1rem 1.4rem;margin-bottom:.8rem;}
     .about-card h5{color:var(--gold);font-size:.73rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:.2rem;}
 
+    /* ── RECRUITER ── */
     #recruiter{background:var(--cream);}
     .recruiter-stat{text-align:center;padding:1.4rem 1rem;}
     .recruiter-stat .rnum{font-family:'Playfair Display',serif;font-size:2.1rem;font-weight:700;color:var(--gold);line-height:1;}
     .recruiter-stat .rlabel{font-size:.75rem;color:#888;letter-spacing:1px;text-transform:uppercase;margin-top:.3rem;}
     .skill-badge{display:inline-block;background:#fff;border:1px solid var(--gold);border-radius:20px;padding:5px 14px;font-size:.8rem;color:var(--navy);margin:.3rem;}
 
-    .pillar-card{background:#fff;border-radius:14px;border-top:3px solid var(--red);padding:1.4rem;height:100%;box-shadow:0 4px 18px rgba(0,0,0,.05);}
-    .pillar-card h5{font-size:1rem;color:var(--navy);margin-bottom:.4rem;}
-    .pillar-card p{font-size:.85rem;color:#555;line-height:1.6;margin:0;}
-    .pillar-icon{font-size:1.6rem;margin-bottom:.5rem;}
-
+    /* ── COLLAPSIBLE ── */
     .collapse-section{background:#fff;border-radius:16px;border:2px solid rgba(201,168,76,.6);margin-bottom:1.2rem;overflow:hidden;box-shadow:0 4px 18px rgba(201,168,76,.12);}
     .collapse-header{display:flex;align-items:center;justify-content:space-between;padding:1.3rem 1.6rem;cursor:pointer;background:linear-gradient(135deg,rgba(201,168,76,.13) 0%,rgba(201,168,76,.04) 100%);border:none;width:100%;text-align:left;transition:background .2s;}
     .collapse-header:hover{background:linear-gradient(135deg,rgba(201,168,76,.22) 0%,rgba(201,168,76,.1) 100%);}
@@ -320,6 +372,7 @@
     .collapse-body{display:none;padding:1.1rem 1.4rem 1.4rem;border-top:1px solid rgba(201,168,76,.2);}
     .collapse-body.open{display:block;}
 
+    /* ── EVENT / COLLAB CARDS ── */
     .event-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:1rem;}
     .event-card{background:var(--cream);border-radius:12px;overflow:hidden;border:1px solid rgba(201,168,76,.2);}
     .event-card .ec-img{width:100%;height:210px;object-fit:cover;display:block;}
@@ -329,6 +382,7 @@
     .event-card p{font-size:.8rem;color:#666;margin:0;line-height:1.6;}
     .tt-wrap{display:flex;justify-content:center;padding:.5rem .8rem .8rem;}
 
+    /* ── SHIP ── */
     #ship{background:linear-gradient(135deg,var(--navy) 0%,#1a2f4a 100%);color:#fff;}
     .ship-card{background:rgba(255,255,255,.07);border:1px solid rgba(201,168,76,.3);border-radius:16px;padding:2rem;text-align:center;backdrop-filter:blur(4px);height:100%;}
     .ship-icon{font-size:2.4rem;color:var(--gold);margin-bottom:.7rem;}
@@ -336,15 +390,10 @@
     .ship-line{font-size:.92rem;color:#bbb;margin-bottom:.8rem;}
     .ship-dates{display:inline-block;background:rgba(201,168,76,.15);border:1px solid var(--gold);border-radius:20px;padding:5px 18px;font-size:.82rem;color:var(--gold-light);}
 
-    #platforms{background:#fff;}
-    .platform-card{background:var(--cream);border-radius:14px;padding:1.4rem;text-align:center;border-top:3px solid var(--gold);height:100%;}
-    .platform-card .pi{font-size:2rem;margin-bottom:.5rem;color:var(--navy);}
-    .platform-card h5{font-size:1rem;margin-bottom:.3rem;}
-    .platform-card p{font-size:.82rem;color:#666;margin:0;line-height:1.6;}
-
-    #brands{background:var(--cream);}
+    /* ── BRANDS ── */
+    #brands{background:#fff;}
     .collab-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1rem;}
-    .collab-card{background:#fff;border-radius:14px;padding:1.3rem;border-top:3px solid var(--gold);transition:transform .2s,box-shadow .2s;}
+    .collab-card{background:var(--cream);border-radius:14px;padding:1.3rem;border-top:3px solid var(--gold);transition:transform .2s,box-shadow .2s;}
     .collab-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.08);}
     .collab-card .ci{font-size:1.5rem;margin-bottom:.5rem;}
     .collab-card h5{font-size:.9rem;margin-bottom:.3rem;color:var(--navy);}
@@ -354,6 +403,7 @@
     .stat-box .stat-num{font-family:'Playfair Display',serif;font-size:2.1rem;font-weight:700;color:var(--gold);line-height:1;}
     .stat-box .stat-label{font-size:.75rem;color:#888;letter-spacing:1px;text-transform:uppercase;margin-top:.3rem;}
 
+    /* ── REVIEWS ── */
     #reviews{background:var(--cream);}
     .review-card{background:#fff;border-radius:16px;padding:1.7rem;box-shadow:0 4px 20px rgba(0,0,0,.06);height:100%;position:relative;}
     .review-card::before{content:'"';font-family:'Playfair Display',serif;font-size:5rem;color:var(--gold);opacity:.13;position:absolute;top:-.5rem;left:1rem;line-height:1;}
@@ -363,12 +413,14 @@
     .review-name{font-weight:700;font-size:.88rem;margin:0;}
     .review-role{font-size:.75rem;color:#888;margin:0;}
 
+    /* ── LIFESTYLE ── */
     #lifestyle{background:#fff;}
     .lifestyle-card{background:var(--cream);border-radius:16px;padding:1.7rem;text-align:center;height:100%;}
     .lifestyle-icon{font-size:2.4rem;margin-bottom:.7rem;}
     .lifestyle-card h4{font-size:.98rem;margin-bottom:.4rem;}
     .lifestyle-card p{font-size:.82rem;color:#666;line-height:1.7;margin:0;}
 
+    /* ── SOCIAL ── */
     #social{background:var(--cream);}
     .social-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:1rem;}
     .social-card{display:flex;align-items:center;gap:.8rem;padding:1rem 1.2rem;border-radius:12px;text-decoration:none;font-weight:700;font-size:.88rem;transition:transform .2s,box-shadow .2s;color:#fff;}
@@ -379,18 +431,22 @@
     .sc-facebook{background:#1877f2;}
     .sc-linkedin{background:#0a66c2;}
 
+    /* ── SUPPORT ── */
     #support{background:#fff;}
     .support-card{background:var(--cream);border-radius:16px;padding:1.7rem;text-align:center;height:100%;}
     .support-icon{font-size:2.1rem;margin-bottom:.7rem;}
     .support-card h4{font-size:.98rem;margin-bottom:.4rem;}
     .support-card p{font-size:.82rem;color:#666;margin-bottom:1rem;}
 
+    /* ── CONTACT ── */
     #contact{background:linear-gradient(135deg,var(--navy) 0%,#1a2f4a 100%);color:#fff;text-align:center;}
     #contact .section-title{color:#fff;}
 
+    /* ── FOOTER ── */
     footer{background:#060e18;color:#555;text-align:center;padding:1.1rem;font-size:.78rem;}
     footer span{color:var(--gold);}
 
+    /* ── LAZY FADE ── */
     .lazy-fade{opacity:0;transition:opacity .5s ease;}
     .lazy-fade.loaded{opacity:1;}
 
@@ -406,6 +462,7 @@
 <!-- ═══ NAVBAR ═══ -->
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container-fluid px-3">
+    <!-- Logo replaces text brand -->
     <a class="navbar-brand p-0" href="#">
       <img src="images/logo.webp" alt="HolaPao" class="navbar-logo"
            onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
@@ -418,9 +475,8 @@
       <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#recruiter">For Recruiters</a></li>
-        <li class="nav-item"><a class="nav-link" href="#platforms">Platforms</a></li>
-        <li class="nav-item" id="nav-ship-li"><a class="nav-link" href="#ship">Onboard</a></li>
-        <li class="nav-item"><a class="nav-link" href="#brands">Brand Work</a></li>
+        <li class="nav-item" id="nav-ship-li"><a class="nav-link" href="#ship">Schedule</a></li>
+        <li class="nav-item"><a class="nav-link" href="#brands">Brands</a></li>
         <li class="nav-item" id="nav-reviews-li"><a class="nav-link" href="#reviews">Reviews</a></li>
         <li class="nav-item"><a class="nav-link" href="#lifestyle">Lifestyle</a></li>
         <li class="nav-item"><a class="nav-link" href="#social">Social</a></li>
@@ -436,16 +492,16 @@
   <div class="container">
     <div class="row align-items-center gy-5">
       <div class="col-lg-7 order-lg-1 order-2 hero-text">
-        <p class="hero-eyebrow">✦ Cruise Content Creator · On-Camera Host · Social Storyteller ✦</p>
+        <p class="hero-eyebrow">✦ Cruise Entertainer · Host · Content Creator ✦</p>
         <h1 class="hero-name">Paola<br><span>Solórzano</span></h1>
-        <p class="hero-title">HolaPao — Bringing the Carnival fleet to life, on camera and behind it.</p>
+        <p class="hero-title">HolaPao — From Mexico City to the High Seas</p>
         <div class="priority-badges">
-          <span class="pbadge">🎯 Fleet Content Creator Candidate</span>
-          <span class="pbadge">📱 60K+ TikTok @paodecrucero</span>
-          <span class="pbadge">🎬 400+ Original Videos</span>
-          <span class="pbadge">🌎 Bilingual EN / ES</span>
+          <span class="pbadge">🎯 Cruise Director Candidate</span>
+          <span class="pbadge">🤝 Brand Partner</span>
+          <span class="pbadge">📱 60K+ TikTok</span>
+          <span class="pbadge">🌎 Bilingual EN/ES</span>
         </div>
-        <p class="hero-tagline">A bilingual cruise content creator already onboard the Carnival fleet — capturing real, shareable moments, riding social trends in real time, and building a content library that travels across every platform.</p>
+        <p class="hero-tagline">Bringing joy, energy, and unforgettable moments to guests around the world. On a mission to become a Cruise Director — one stage at a time.</p>
         <div class="d-flex flex-wrap gap-3">
           <button class="btn-gold" onclick="paoScroll('recruiter')">🎯 For Recruiters</button>
           <button class="btn-outline-gold" onclick="paoScroll('contact')">✉️ Work With Me</button>
@@ -467,16 +523,16 @@
     <div class="row gy-5 align-items-center">
       <div class="col-lg-6">
         <p class="section-label">About Me</p>
-        <h2 class="section-title">A Cruise Storyteller,<br>Born for the Camera</h2>
+        <h2 class="section-title">The Girl from Mexico City<br>Who Chose the Ocean</h2>
         <div class="divider divider-left"></div>
-        <p style="font-size:1rem;line-height:1.85;color:#444;margin-bottom:1.2rem;">Born and raised in <strong>Mexico City</strong>, Paola found her voice on cruise ships — first as a live entertainer and host, and now as a bilingual content creator building a real audience around the cruise lifestyle. As <strong>@paodecrucero</strong>, she has grown to 60K+ followers on TikTok with 400+ original videos that turn everyday onboard moments into shareable stories.</p>
-        <p style="font-size:1rem;line-height:1.85;color:#444;">Today, as an <strong>Experience Coordinator on the Carnival Mardi Gras</strong>, she works at the intersection of hospitality, entertainment, and storytelling — spotting the moments that matter, capturing them on camera, and shaping them into platform-ready content for both her own brand and the cruise lines she loves.</p>
+        <p style="font-size:1rem;line-height:1.85;color:#444;margin-bottom:1.2rem;">Born and raised in the vibrant heart of <strong>Mexico City</strong>, Paola discovered early on that her greatest gift was making people feel something — laughter, wonder, connection. That gift led her to the world of cruise ship entertainment, where she has built a career as a live entertainer, host, and audience engagement specialist.</p>
+        <p style="font-size:1rem;line-height:1.85;color:#444;">Whether she's hosting Bingo, commanding a stage in the main theater, or creating content for her growing TikTok community as <strong>@paodecrucero</strong>, Paola brings the same unstoppable energy: warm, charismatic, and completely real.</p>
       </div>
       <div class="col-lg-5 offset-lg-1">
-        <div class="about-card"><h5>🎬 Role</h5><p class="mb-0">Cruise Content Creator · Experience Coordinator · On-Camera Host</p></div>
+        <div class="about-card"><h5>🎭 Role</h5><p class="mb-0">Cruise Ship Entertainer, Experience Coordinator & Events Host</p></div>
         <div class="about-card"><h5>🌍 Origin</h5><p class="mb-0">Mexico City, México</p></div>
-        <div class="about-card"><h5>🎯 Target Role</h5><p class="mb-0">Fleet Content Creator — Carnival Cruise Line</p></div>
-        <div class="about-card"><h5>📱 Creator Footprint</h5><p class="mb-0">TikTok @paodecrucero · 60K+ followers · 400+ original videos</p></div>
+        <div class="about-card"><h5>🎯 Career Goal</h5><p class="mb-0">Cruise Director — leading entertainment programs and creating unforgettable guest experiences</p></div>
+        <div class="about-card"><h5>📱 Content Creator</h5><p class="mb-0">TikTok @paodecrucero · 60K+ followers · 400+ videos</p></div>
         <div class="about-card"><h5>💬 Languages</h5><p class="mb-0">Spanish (native) · English (professional)</p></div>
       </div>
     </div>
@@ -487,136 +543,96 @@
 <section id="recruiter">
   <div class="container">
     <div class="text-center mb-5">
-      <p class="section-label">Fleet Content Creator Candidate</p>
-      <h2 class="section-title">Why Paola is Built for This Role</h2>
+      <p class="section-label">Cruise Director Candidate</p>
+      <h2 class="section-title">Why Paola is Ready for the Next Level</h2>
       <div class="divider"></div>
-      <p style="color:#555;max-width:680px;margin:0 auto;font-size:1rem;line-height:1.8;">Paola doesn't just create cruise content — she <strong>lives onboard</strong> while she does it. She is already part of the Carnival fleet, already on camera and behind it daily, and already building a content library guests want to watch and share.</p>
+      <p style="color:#555;max-width:640px;margin:0 auto;font-size:1rem;line-height:1.8;">Paola has spent years in the trenches of cruise ship entertainment — hosting, performing, operating, and leading. She doesn't just entertain; she <strong>manages experiences</strong>.</p>
     </div>
-
     <div class="row g-3 mb-5 text-center">
-      <div class="col-6 col-md-3"><div class="recruiter-stat"><div class="rnum">60K+</div><div class="rlabel">TikTok Followers</div></div></div>
-      <div class="col-6 col-md-3"><div class="recruiter-stat"><div class="rnum">400+</div><div class="rlabel">Original Videos</div></div></div>
-      <div class="col-6 col-md-3"><div class="recruiter-stat"><div class="rnum">200+</div><div class="rlabel">Live Events Hosted</div></div></div>
-      <div class="col-6 col-md-3"><div class="recruiter-stat"><div class="rnum">3K+</div><div class="rlabel">Max Live Crowd</div></div></div>
+      <div class="col-6 col-md-3"><div class="recruiter-stat"><div class="rnum">200+</div><div class="rlabel">Events Hosted</div></div></div>
+      <div class="col-6 col-md-3"><div class="recruiter-stat"><div class="rnum">3K+</div><div class="rlabel">Max Crowd Managed</div></div></div>
+      <div class="col-6 col-md-3"><div class="recruiter-stat"><div class="rnum">2</div><div class="rlabel">Languages</div></div></div>
+      <div class="col-6 col-md-3"><div class="recruiter-stat"><div class="rnum">5★</div><div class="rlabel">Guest Satisfaction</div></div></div>
     </div>
-
-    <!-- Why I'm a Strong Match -->
-    <div class="row g-3 mb-5">
-      <div class="col-md-6 col-lg-3">
-        <div class="pillar-card"><div class="pillar-icon">🎯</div><h5>Shareable, Not Just Watchable</h5><p>A real instinct for moments that travel — the reactions, peaks, and emotions guests actually want to share.</p></div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="pillar-card"><div class="pillar-icon">📚</div><h5>Content-Library Mindset</h5><p>Saves and organizes shipboard footage for fast reuse across formats and platforms — the always-on approach this role demands.</p></div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="pillar-card"><div class="pillar-icon">📈</div><h5>Trend-Native</h5><p>Rides emerging social trends in real time and translates them into brand-aligned cruise content with proven brand-collab experience.</p></div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="pillar-card"><div class="pillar-icon">🚢</div><h5>Already Onboard</h5><p>Bilingual, shipboard-tested, and built for fast-paced, always-on production across the Carnival fleet.</p></div>
-      </div>
-    </div>
-
     <div class="text-center mb-5">
-      <h4 style="font-size:.95rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;">Core Skills</h4>
+      <h4 style="font-size:.95rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;">Core Competencies</h4>
       <div>
-        <span class="skill-badge">🎬 Short & Long-Form Video</span>
-        <span class="skill-badge">📱 TikTok · Instagram · Facebook</span>
-        <span class="skill-badge">🎙️ On-Camera Hosting</span>
-        <span class="skill-badge">🎞️ Video Editing Software</span>
-        <span class="skill-badge">✂️ Mobile Editing Apps</span>
-        <span class="skill-badge">📸 Photo Editing</span>
-        <span class="skill-badge">📊 Social Analytics Tools</span>
-        <span class="skill-badge">🗓️ Content Calendars</span>
-        <span class="skill-badge">📚 Content Library Management</span>
-        <span class="skill-badge">🎯 Trend Translation</span>
-        <span class="skill-badge">🤝 Brand Collaborations</span>
-        <span class="skill-badge">🌎 Bilingual Storytelling (EN/ES)</span>
-        <span class="skill-badge">⚓ Onboard Production Experience</span>
-        <span class="skill-badge">🎭 Live Hosting & Crowd Engagement</span>
+        <span class="skill-badge">🎤 Live MC & Hosting</span>
+        <span class="skill-badge">🎭 Stage Performance</span>
+        <span class="skill-badge">👥 Crowd Management (3,000+)</span>
+        <span class="skill-badge">🎬 Event Production</span>
+        <span class="skill-badge">🔧 Entertainment Tech Operations</span>
+        <span class="skill-badge">📋 Program Planning</span>
+        <span class="skill-badge">🌎 Bilingual Hosting (EN/ES)</span>
+        <span class="skill-badge">📱 Content Creation & Social Media</span>
+        <span class="skill-badge">🤝 Guest Relations</span>
+        <span class="skill-badge">⚡ High-Energy Adaptability</span>
       </div>
     </div>
-
+    <!-- Events collapsible — built by JS from JSON -->
     <div class="collapse-section">
       <button class="collapse-header" onclick="toggleCollapse('events-body',this)">
-        <h4>🎬 Onboard Moments — Content Capture in Action</h4>
+        <h4>🎪 Events Hosted — See Paola in Action</h4>
         <span class="d-flex align-items-center gap-2">
           <span class="ch-hint">Tap to expand</span>
           <i class="fa fa-chevron-down ch-icon"></i>
         </span>
       </button>
       <div class="collapse-body" id="events-body">
-        <p style="color:#666;font-size:.88rem;margin-bottom:1.4rem;">A sample of the shipboard moments Paola spots, captures, and turns into shareable content — from family storytime to massive 3,000-guest countdowns.</p>
+        <p style="color:#666;font-size:.88rem;margin-bottom:1.4rem;">From intimate family shows to massive New Year's Eve countdowns — Paola has hosted it all.</p>
         <div class="event-grid" id="events-grid"></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ PLATFORMS ═══ -->
-<section id="platforms">
-  <div class="container">
-    <div class="text-center mb-5">
-      <p class="section-label">Platform Focus</p>
-      <h2 class="section-title">Where the Stories Live</h2>
-      <div class="divider"></div>
-    </div>
-    <div class="row g-4 justify-content-center">
-      <div class="col-md-4 col-sm-6"><div class="platform-card"><div class="pi"><i class="fa-brands fa-tiktok"></i></div><h5>TikTok</h5><p>Short-form, trend-driven cruise storytelling for the next generation of cruisers.</p></div></div>
-      <div class="col-md-4 col-sm-6"><div class="platform-card"><div class="pi"><i class="fa-brands fa-instagram"></i></div><h5>Instagram</h5><p>Reels, highlights, and behind-the-scenes moments that humanize the brand.</p></div></div>
-      <div class="col-md-4 col-sm-6"><div class="platform-card"><div class="pi"><i class="fa-brands fa-facebook"></i></div><h5>Facebook</h5><p>Long-form recaps and family-milestone storytelling that resonate with core cruisers.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ ONBOARD / SCHEDULE ═══ -->
+<!-- ═══ SCHEDULE ═══ -->
 <section id="ship">
   <div class="container">
     <div class="text-center mb-5">
-      <p class="section-label" style="color:var(--gold-light)">Currently Onboard</p>
-      <h2 class="section-title" style="color:#fff">Where Pao is Filming Now</h2>
+      <p class="section-label" style="color:var(--gold-light)">Where in the World is Pao?</p>
+      <h2 class="section-title" style="color:#fff">Assignment Schedule</h2>
       <div class="divider"></div>
     </div>
     <div class="row g-4 justify-content-center" id="ship-cards"></div>
     <p class="text-center mt-4" style="color:#aaa;font-size:.83rem;">
       Follow on <a href="#" id="ship-ig-link" target="_blank" style="color:var(--gold)">Instagram</a>
-      or <a href="#" id="ship-tt-link" target="_blank" style="color:var(--gold)">TikTok</a> for real-time fleet content.
+      or <a href="#" id="ship-tt-link" target="_blank" style="color:var(--gold)">TikTok</a> for real-time updates!
     </p>
   </div>
 </section>
 
-<!-- ═══ BRAND WORK ═══ -->
+<!-- ═══ BRANDS ═══ -->
 <section id="brands">
   <div class="container">
     <div class="text-center mb-4">
-      <p class="section-label">Branded Content Experience</p>
+      <p class="section-label">Partner With Pao</p>
       <h2 class="section-title">Brand Collaborations</h2>
       <div class="divider"></div>
     </div>
     <div class="stat-row" id="stat-row"></div>
-    <p style="font-size:1rem;line-height:1.85;color:#444;max-width:680px;margin:0 auto 2rem;text-align:center;">Beyond her own creator brand, Paola has produced authentic sponsored content for partners — proof she can deliver content that lives inside a brand voice, hits creative briefs, and still feels real to the audience.</p>
-
+    <p style="font-size:1rem;line-height:1.85;color:#444;max-width:660px;margin:0 auto 2rem;text-align:center;">With a highly engaged bilingual audience of cruise lovers, travel enthusiasts, and lifestyle followers, Paola is the perfect partner for brands that want authentic, high-energy content that converts.</p>
     <div class="collab-grid mb-4">
-      <div class="collab-card"><div class="ci">🎬</div><h5>Sponsored Content</h5><p>TikTok and Instagram content woven naturally into cruise & lifestyle storytelling.</p></div>
-      <div class="collab-card"><div class="ci">✈️</div><h5>Travel & Cruise</h5><p>She lives the cruise life on camera — her audience trusts what she features.</p></div>
-      <div class="collab-card"><div class="ci">💄</div><h5>Beauty & Lifestyle</h5><p>Skincare, wellness, and fashion content for a cruise-going audience.</p></div>
-      <div class="collab-card"><div class="ci">🌮</div><h5>Latin & Multicultural</h5><p>Bilingual creator built for US Hispanic and Latin American audience growth.</p></div>
-      <div class="collab-card"><div class="ci">📦</div><h5>Product Features</h5><p>Genuine, on-voice product spotlights that feel native to her feed.</p></div>
-      <div class="collab-card"><div class="ci">📊</div><h5>Analytics-Aware</h5><p>Uses social analytics to understand what resonates and refine future content.</p></div>
+      <div class="collab-card"><div class="ci">🎬</div><h5>Sponsored Content</h5><p>Authentic TikTok & Instagram posts woven naturally into her cruise & lifestyle content.</p></div>
+      <div class="collab-card"><div class="ci">✈️</div><h5>Travel & Cruise</h5><p>Luggage, gear, accessories — she lives this life and her audience trusts her.</p></div>
+      <div class="collab-card"><div class="ci">💄</div><h5>Beauty & Lifestyle</h5><p>Skincare, wellness, and fashion brands that align with her active lifestyle.</p></div>
+      <div class="collab-card"><div class="ci">🥊</div><h5>Fitness & Wellness</h5><p>An avid boxer and gym enthusiast — natural fit for fitness and activewear brands.</p></div>
+      <div class="collab-card"><div class="ci">🌮</div><h5>Latin & Multicultural</h5><p>Bilingual creator ideal for brands targeting US Hispanic & Latin American audiences.</p></div>
+      <div class="collab-card"><div class="ci">📦</div><h5>Unboxing & Reviews</h5><p>Genuine, fun product reviews that feel on-brand with her personality.</p></div>
     </div>
-
+    <!-- Collabs collapsible — built by JS from JSON -->
     <div class="collapse-section">
       <button class="collapse-header" onclick="toggleCollapse('collabs-body',this)">
         <h4>📹 Past Brand Collaborations — Watch the Content</h4>
         <i class="fa fa-chevron-down ch-icon"></i>
       </button>
       <div class="collapse-body" id="collabs-body">
-<p style="color:#666;font-size:.88rem;margin-bottom:1.4rem;">A look at branded content Paola has produced — natural, on-voice, and audience-tested.</p>
-        <div class="event-grid" id="collabs-grid"></div>
+        <p style="color:#666;font-size:.88rem;margin-bottom:1.4rem;">Real sponsored content Paola has created for brands. Click to play.</p>
+        <div class="row g-4 justify-content-center" id="collabs-grid"></div>
       </div>
     </div>
-
     <div class="text-center mt-4">
-      <a href="#" id="brand-cta" class="btn-gold">📩 Partner With HolaPao</a>
+      <button class="btn-gold" onclick="paoScroll('contact')">💼 Let's Collaborate</button>
     </div>
   </div>
 </section>
@@ -625,11 +641,11 @@
 <section id="reviews">
   <div class="container">
     <div class="text-center mb-5">
-      <p class="section-label">Testimonials</p>
-      <h2 class="section-title">Words From the Cruise World</h2>
+      <p class="section-label">What People Say</p>
+      <h2 class="section-title">Reviews & Testimonials</h2>
       <div class="divider"></div>
     </div>
-    <div class="row g-4" id="reviews-grid"></div>
+    <div class="row g-4 justify-content-center" id="reviews-grid"></div>
   </div>
 </section>
 
@@ -637,15 +653,14 @@
 <section id="lifestyle">
   <div class="container">
     <div class="text-center mb-5">
-      <p class="section-label">Cruise Lifestyle</p>
-      <h2 class="section-title">The Content Pillars</h2>
+      <p class="section-label">Beyond the Stage</p>
+      <h2 class="section-title">Life Off the Mic</h2>
       <div class="divider"></div>
     </div>
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-3"><div class="lifestyle-card"><div class="lifestyle-icon">🚢</div><h4>Onboard Life</h4><p>Sail-aways, deck moments, and the everyday magic of life at sea.</p></div></div>
-      <div class="col-md-6 col-lg-3"><div class="lifestyle-card"><div class="lifestyle-icon">🎭</div><h4>Entertainment</h4><p>Behind-the-scenes from shows, games, and live hosting moments.</p></div></div>
-      <div class="col-md-6 col-lg-3"><div class="lifestyle-card"><div class="lifestyle-icon">🌎</div><h4>Ports & Travel</h4><p>Destination storytelling that inspires the next booking.</p></div></div>
-      <div class="col-md-6 col-lg-3"><div class="lifestyle-card"><div class="lifestyle-icon">👨‍👩‍👧</div><h4>Family Moments</h4><p>The milestones, reactions, and memories cruisers come for.</p></div></div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4 col-sm-6"><div class="lifestyle-card"><div class="lifestyle-icon">🥊</div><h4>Boxing</h4><p>Paola trains in boxing during her time off — discipline, strength, and focus that fuel her stage energy and drive.</p></div></div>
+      <div class="col-md-4 col-sm-6"><div class="lifestyle-card"><div class="lifestyle-icon">🏋️‍♀️</div><h4>Gym & Fitness</h4><p>Staying active is a lifestyle, not a routine. Whether on land or at sea, she finds a way to move and stay strong.</p></div></div>
+      <div class="col-md-4 col-sm-6"><div class="lifestyle-card"><div class="lifestyle-icon">📱</div><h4>Content Creation</h4><p>400+ TikTok videos and counting — she documents the real, raw, and joyful side of life as a cruise entertainer.</p></div></div>
     </div>
   </div>
 </section>
@@ -654,7 +669,7 @@
 <section id="social">
   <div class="container">
     <div class="text-center mb-5">
-      <p class="section-label">Connect</p>
+      <p class="section-label">Find Me Online</p>
       <h2 class="section-title">Follow the Journey</h2>
       <div class="divider"></div>
     </div>
@@ -662,187 +677,306 @@
   </div>
 </section>
 
-<!-- ═══ SUPPORT (optional) ═══ -->
-<section id="support" style="display:none;">
+<!-- ═══ SUPPORT ═══ -->
+<section id="support">
   <div class="container">
     <div class="text-center mb-5">
-      <p class="section-label">Support the Creator</p>
-      <h2 class="section-title">Fuel the Content</h2>
+      <p class="section-label">Show Some Love</p>
+      <h2 class="section-title">Support Paola</h2>
       <div class="divider"></div>
+      <p style="color:#666;max-width:500px;margin:0 auto;font-size:.93rem;">Love what Pao does? Support her journey with a coffee, a gift, or just by sharing her content! 💛</p>
     </div>
-    <div class="row g-4 justify-content-center" id="support-grid"></div>
+    <div class="row g-4 justify-content-center" id="support-cards"></div>
   </div>
 </section>
 
 <!-- ═══ CONTACT ═══ -->
 <section id="contact">
   <div class="container">
-    <p class="section-label" style="color:var(--gold-light)">Let's Create Together</p>
-    <h2 class="section-title">Work With Paola</h2>
+    <p class="section-label" style="color:var(--gold-light)">Get in Touch</p>
+    <h2 class="section-title">Bookings & Collabs</h2>
     <div class="divider"></div>
-    <p style="max-width:600px;margin:0 auto 2rem;color:#ddd;font-size:1rem;line-height:1.8;">
-      Open to <strong style="color:var(--gold)">Fleet Content Creator opportunities</strong>, brand partnerships, and onboard content collaborations across the cruise industry.
-    </p>
-    <a href="#" id="contact-cta" class="btn-gold" target="_blank">✉️ Start a Conversation</a>
+    <p style="color:#bbb;font-size:1rem;">Interested in a brand partnership, collaboration, or booking Paola for an event?<br>Fill out the form and she'll get back to you! 💛</p>
+    <div class="mt-4 mb-4">
+      <a id="contact-form-btn" href="#" target="_blank" rel="noopener" class="btn-gold" style="font-size:1rem;padding:13px 36px;">📋 Send an Inquiry</a>
+    </div>
+    <div class="d-flex justify-content-center gap-3 flex-wrap" id="contact-social-links"></div>
   </div>
 </section>
 
+<!-- ═══ FOOTER ═══ -->
 <footer>
-  © <span id="year"></span> <span>Hola Pao</span> · Paola Solórzano Albarrán · Cruise Content Creator
+  <p class="mb-0">© 2026 <span>HolaPao</span> · Paola Solórzano Albarrán · Cruise Ship Entertainer · Mexico City, México · Made with 💛 for the high seas</p>
+  <p class="mb-0" style="margin-top:.3rem;font-size:.72rem;color:#333;">
+    <a href="https://www.tiktok.com/@paodecrucero" target="_blank" rel="noopener" style="color:#555;text-decoration:none;margin:0 6px;">TikTok @paodecrucero</a>·
+    <a href="https://www.instagram.com/pao_entertainment/" target="_blank" rel="noopener" style="color:#555;text-decoration:none;margin:0 6px;">Instagram @pao_entertainment</a>·
+    <a href="https://www.linkedin.com/in/paola-solorzano-albarran-905a54211" target="_blank" rel="noopener" style="color:#555;text-decoration:none;margin:0 6px;">LinkedIn</a>
+  </p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
-<script async src="https://www.tiktok.com/embed.js"></script>
-<script async src="https://www.instagram.com/embed.js"></script>
-
 <script>
-  // ═══ Load config ═══
-  const CFG = JSON.parse(document.getElementById('site-config').textContent);
+/* ════════════════════════════════════════════
+   BOOTSTRAP CONFIG
+════════════════════════════════════════════ */
+const CFG = JSON.parse(document.getElementById('site-config').textContent);
+const { site, social, stats, assignments, events, collaborations, reviews } = CFG;
+const $ = id => document.getElementById(id);
 
-  // ═══ Year ═══
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // ═══ Collapse toggle ═══
-  function toggleCollapse(id, btn){
-    const body = document.getElementById(id);
-    body.classList.toggle('open');
-    btn.classList.toggle('open');
+/* ════════════════════════════════════════════
+   COLLAPSE TOGGLE
+════════════════════════════════════════════ */
+function toggleCollapse(bodyId, btn){
+  const body = document.getElementById(bodyId);
+  const opening = !body.classList.contains('open');
+  body.classList.toggle('open', opening);
+  btn.classList.toggle('open', opening);
+  if(opening){
+    /* Lazy-load TikTok on first open */
+    body.querySelectorAll('[data-lazy-tt]').forEach(wrap => {
+      if(wrap.dataset.loaded) return;
+      wrap.dataset.loaded = '1';
+      const vid = wrap.dataset.lazyTt;
+      const bq = document.createElement('blockquote');
+      bq.className = 'tiktok-embed';
+      bq.setAttribute('cite','https://www.tiktok.com/@paodecrucero/video/'+vid);
+      bq.setAttribute('data-video-id', vid);
+      bq.style.cssText = 'max-width:325px;min-width:325px;';
+      bq.innerHTML = '<section></section>';
+      wrap.appendChild(bq);
+      if(!window._ttLoaded){
+        window._ttLoaded = true;
+        const s = document.createElement('script');
+        s.src = 'https://www.tiktok.com/embed.js'; s.async = true;
+        document.body.appendChild(s);
+      } else if(window.tiktokEmbed){ window.tiktokEmbed.lib.render(wrap); }
+    });
+    /* Process any IG embeds */
+    if(window.instgrm && window.instgrm.Embeds) window.instgrm.Embeds.process();
   }
+}
 
-  // ═══ Hero schedule pills ═══
-  (function renderSchedule(){
-    const wrap = document.getElementById('hero-schedule');
-    const today = new Date();
-    const fmt = d => new Date(d).toLocaleDateString('en-US',{month:'short',day:'numeric'});
-    const active = CFG.assignments.filter(a => a.show);
-    active.forEach(a => {
-      const start = new Date(a.startDate), end = new Date(a.endDate);
-      const isNow = today >= start && today <= end;
-      const dot = isNow ? 'active' : 'next';
-      const label = isNow ? 'Onboard Now' : 'Next';
-      wrap.insertAdjacentHTML('beforeend',
-        `<span class="schedule-pill"><span class="pill-dot ${dot}"></span>${label}: <strong>${a.shipName}</strong> · ${fmt(a.startDate)}–${fmt(a.endDate)}</span>`);
-    });
-  })();
-
-  // ═══ Ship cards ═══
-  (function renderShips(){
-    const wrap = document.getElementById('ship-cards');
-    const active = CFG.assignments.filter(a => a.show);
-    if(!active.length){ document.getElementById('ship').style.display='none'; document.getElementById('nav-ship-li').style.display='none'; return; }
-    const fmt = d => new Date(d).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
-    active.forEach(a => {
-      wrap.insertAdjacentHTML('beforeend',
-        `<div class="col-md-6 col-lg-5"><div class="ship-card">
-           <div class="ship-icon">⚓</div>
-           <h3 class="ship-name">${a.shipName}</h3>
-           <p class="ship-line">${a.cruiseLine}</p>
-           <span class="ship-dates">${fmt(a.startDate)} → ${fmt(a.endDate)}</span>
-         </div></div>`);
-    });
-    document.getElementById('ship-ig-link').href = CFG.social.instagram;
-    document.getElementById('ship-tt-link').href = CFG.social.tiktok;
-  })();
-
-  // ═══ Events grid ═══
-  (function renderEvents(){
-    const grid = document.getElementById('events-grid');
-    CFG.events.filter(e => e.show).forEach(e => {
-      let media = '';
-      if(e.type === 'image'){
-        media = `<img src="${e.src}" alt="${e.title}" class="ec-img" loading="lazy" onerror="this.src='https://placehold.co/600x420/0d1b2a/c9a84c?text=${encodeURIComponent(e.title)}'"/>`;
-      } else if(e.type === 'instagram'){
-        media = `<div class="tt-wrap"><blockquote class="instagram-media" data-instgrm-permalink="${e.url}" data-instgrm-version="14" style="max-width:540px;min-width:280px;width:100%;"></blockquote></div>`;
-      } else if(e.type === 'tiktok'){
-        media = `<div class="tt-wrap"><blockquote class="tiktok-embed" cite="https://www.tiktok.com/@paodecrucero/video/${e.videoId}" data-video-id="${e.videoId}" style="max-width:325px;min-width:280px;"><section></section></blockquote></div>`;
-      }
-      grid.insertAdjacentHTML('beforeend',
-        `<div class="event-card">${media}<div class="ec-body"><div class="ec-tag">${e.tag}</div><h5>${e.title}</h5><p>${e.description}</p></div></div>`);
-    });
-  })();
-
-  // ═══ Collabs grid ═══
-  (function renderCollabs(){
-    const grid = document.getElementById('collabs-grid');
-    CFG.collaborations.filter(c => c.show).forEach(c => {
-      const media = `<div class="tt-wrap"><blockquote class="tiktok-embed" cite="https://www.tiktok.com/@paodecrucero/video/${c.videoId}" data-video-id="${c.videoId}" style="max-width:325px;min-width:280px;"><section></section></blockquote></div>`;
-      grid.insertAdjacentHTML('beforeend',
-        `<div class="event-card">${media}<div class="ec-body"><div class="ec-tag">${c.tag}</div><h5>${c.title}</h5><p>${c.description}</p></div></div>`);
-    });
-  })();
-
-  // ═══ Brand stat row ═══
-  (function renderStats(){
-    const row = document.getElementById('stat-row');
-    row.innerHTML = `
-      <div class="stat-box"><div class="stat-num">${CFG.stats.tiktokFollowers}</div><div class="stat-label">TikTok Followers</div></div>
-      <div class="stat-box"><div class="stat-num">${CFG.stats.videosPublished}</div><div class="stat-label">Videos Published</div></div>
-      <div class="stat-box"><div class="stat-num">${CFG.stats.languages}</div><div class="stat-label">Languages</div></div>`;
-    document.getElementById('brand-cta').href = CFG.site.googleFormUrl;
-    document.getElementById('contact-cta').href = CFG.site.googleFormUrl;
-  })();
-
-  // ═══ Reviews ═══
-  (function renderReviews(){
-    const grid = document.getElementById('reviews-grid');
-    const active = CFG.reviews.filter(r => r.show);
-    if(!active.length){ document.getElementById('reviews').style.display='none'; document.getElementById('nav-reviews-li').style.display='none'; return; }
-    active.forEach(r => {
-      grid.insertAdjacentHTML('beforeend',
-        `<div class="col-md-6 col-lg-4"><div class="review-card">
-           <p class="review-text">${r.quote}</p>
-           <div class="review-author">
-             <div class="review-avatar">${r.initials}</div>
-             <div><p class="review-name">${r.name}</p><p class="review-role">${r.title}</p></div>
-           </div>
-         </div></div>`);
-    });
-  })();
-
-  // ═══ Social grid ═══
-  (function renderSocial(){
-    const grid = document.getElementById('social-grid');
-    const items = [
-      { url: CFG.social.tiktok,    cls:'sc-tiktok',    icon:'fa-brands fa-tiktok',    label:'TikTok'    },
-      { url: CFG.social.instagram, cls:'sc-instagram', icon:'fa-brands fa-instagram', label:'Instagram' },
-      { url: CFG.social.facebook,  cls:'sc-facebook',  icon:'fa-brands fa-facebook',  label:'Facebook'  },
-      { url: CFG.social.linkedin,  cls:'sc-linkedin',  icon:'fa-brands fa-linkedin',  label:'LinkedIn'  }
-    ];
-    items.filter(i => i.url).forEach(i => {
-      grid.insertAdjacentHTML('beforeend',
-        `<a class="social-card ${i.cls}" href="${i.url}" target="_blank" rel="noopener"><i class="${i.icon}"></i><span>${i.label}</span></a>`);
-    });
-  })();
-
-  // ═══ Support (Ko-fi / Amazon) — hidden unless URLs provided ═══
-  (function renderSupport(){
-    const sec = document.getElementById('support');
-    const grid = document.getElementById('support-grid');
-    const items = [];
-    if(CFG.site.kofiUrl){ items.push({ icon:'☕', title:'Buy Me a Ko-fi', desc:'Help fuel the next cruise content drop.', url:CFG.site.kofiUrl, btn:'Support on Ko-fi' }); }
-    if(CFG.site.amazonWishlistUrl){ items.push({ icon:'🎁', title:'Amazon Wishlist', desc:'Gear up the creator kit for the next sailing.', url:CFG.site.amazonWishlistUrl, btn:'View Wishlist' }); }
-    if(!items.length) return;
-    sec.style.display = 'block';
-    items.forEach(it => {
-      grid.insertAdjacentHTML('beforeend',
-        `<div class="col-md-5"><div class="support-card">
-           <div class="support-icon">${it.icon}</div>
-           <h4>${it.title}</h4><p>${it.desc}</p>
-           <a class="btn-gold" href="${it.url}" target="_blank" rel="noopener">${it.btn}</a>
-         </div></div>`);
-    });
-  })();
-
-  // ═══ Google Translate widget ═══
-  (function renderTranslate(){
-    const li = document.getElementById('nav-translate');
-    li.innerHTML = `<a class="nav-link translate-btn" href="#" onclick="doTranslate();return false;">🌐 ES / EN</a>`;
-  })();
-  function doTranslate(){
-    const url = 'https://translate.google.com/translate?sl=auto&tl=es&u=' + encodeURIComponent(location.href);
-    window.open(url,'_blank');
+/* ════════════════════════════════════════════
+   RENDER HELPER — single event/collab card
+════════════════════════════════════════════ */
+function renderCard(item, colClass){
+  let media = '';
+  if(item.type === 'image'){
+    media = `<img src="${item.src}" alt="${item.title}" class="ec-img lazy-fade"
+               loading="lazy" onload="this.classList.add('loaded')"
+               onerror="this.src='https://placehold.co/400x210/0d1b2a/c9a84c?text=${encodeURIComponent(item.title)}';this.classList.add('loaded')"/>`;
+  } else if(item.type === 'instagram'){
+    media = `<div style="padding:.5rem .8rem .8rem">
+      <blockquote class="instagram-media" data-instgrm-permalink="${item.url}"
+        data-instgrm-version="14" style="width:100%;max-width:100%;border-radius:8px;"></blockquote>
+    </div>`;
+  } else if(item.type === 'tiktok'){
+    media = `<div class="tt-wrap" data-lazy-tt="${item.videoId}"></div>`;
   }
+  return `<div class="${colClass}"><div class="event-card">
+    <div class="ec-body"><div class="ec-tag">${item.tag}</div><h5>${item.title}</h5><p>${item.description}</p></div>
+    ${media}
+  </div></div>`;
+}
+
+/* ════════════════════════════════════════════
+   GOOGLE TRANSLATE
+════════════════════════════════════════════ */
+if(site.siteUrl){
+  $('nav-translate').innerHTML = `<a class="nav-link translate-btn"
+    href="https://translate.google.com/translate?sl=en&tl=es&u=${encodeURIComponent(site.siteUrl)}"
+    target="_blank" rel="noopener">🌐 Ver en Español</a>`;
+}
+
+/* ════════════════════════════════════════════
+   DATE ENGINE — assignments
+════════════════════════════════════════════ */
+function parseDate(s){ if(!s) return null; const[y,m,d]=s.split('-').map(Number); return new Date(y,m-1,d); }
+function fmtDate(s){
+  if(!s) return '';
+  const d = parseDate(s);
+  return d ? d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}) : s;
+}
+function classify(a){
+  const today = new Date(); today.setHours(0,0,0,0);
+  const s = parseDate(a.startDate), e = parseDate(a.endDate);
+  if(!s && !e) return 'next';
+  if(s && e){ if(today>=s && today<=e) return 'current'; if(today<s) return 'next'; return 'past'; }
+  if(s && !e) return today>=s ? 'current' : 'next';
+  return 'next';
+}
+
+const styleMap = {
+  current:{ borderColor:'rgba(74,222,128,.5)', dotColor:'#4ade80', glow:'0 0 8px #4ade80', label:'On Board Now', color:'#4ade80', icon:'🚢', pillDot:'active', pillLabel:'Now'  },
+  next:   { borderColor:'rgba(201,168,76,.3)', dotColor:'var(--gold)', glow:'none',         label:'Up Next',      color:'var(--gold)', icon:'⚓', pillDot:'next',   pillLabel:'Next' }
+};
+
+const visibleA = assignments
+  .filter(a => a.show !== false)
+  .map(a => ({...a, _t: classify(a)}))
+  .filter(a => a._t !== 'past');
+
+/* Hero pills */
+if(visibleA.length){
+  $('hero-schedule').innerHTML = visibleA.map(a => {
+    const s = styleMap[a._t]||styleMap.next;
+    const ds = (a.startDate&&a.endDate) ? `${fmtDate(a.startDate)} – ${fmtDate(a.endDate)}` : '';
+    return `<div class="schedule-pill"><span class="pill-dot ${s.pillDot}"></span>
+      <span><strong>${s.pillLabel}:</strong> ${a.shipName}${ds?' · '+ds:''}</span></div>`;
+  }).join('');
+} else { $('hero-schedule').style.display='none'; }
+
+/* Ship cards */
+if(visibleA.length){
+  const cc = visibleA.length===1?'col-lg-6 col-md-8':visibleA.length===2?'col-lg-5 col-md-6':'col-lg-4 col-md-6';
+  $('ship-cards').innerHTML = visibleA.map(a => {
+    const s = styleMap[a._t]||styleMap.next;
+    const ds = (a.startDate&&a.endDate) ? `${fmtDate(a.startDate)} – ${fmtDate(a.endDate)}` : '';
+    return `<div class="${cc}"><div class="ship-card" style="border-color:${s.borderColor}">
+      <div style="display:flex;align-items:center;justify-content:center;gap:.5rem;margin-bottom:.8rem;">
+        <span style="width:10px;height:10px;border-radius:50%;background:${s.dotColor};box-shadow:${s.glow};display:inline-block;"></span>
+        <span style="font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:${s.color};">${s.label}</span>
+      </div>
+      <div class="ship-icon">${s.icon}</div>
+      <h3 class="ship-name">${a.shipName}</h3>
+      <p class="ship-line">${a.cruiseLine||''}</p>
+      ${ds?`<span class="ship-dates">📅 ${ds}</span>`:''}
+    </div></div>`;
+  }).join('');
+  if(social.instagram) $('ship-ig-link').href = social.instagram;
+  if(social.tiktok)    $('ship-tt-link').href = social.tiktok;
+} else {
+  const sec = $('ship'); if(sec) sec.style.display='none';
+  const li = $('nav-ship-li'); if(li) li.style.display='none';
+}
+
+/* ════════════════════════════════════════════
+   EVENTS (recruiter collapsible)
+════════════════════════════════════════════ */
+const visibleEvents = events.filter(e => e.show !== false);
+if(visibleEvents.length){
+  $('events-grid').innerHTML = visibleEvents.map(e => renderCard(e, '')).join('');
+} else {
+  // Hide the entire collapsible if no events
+  const cs = document.querySelector('#events-body').closest('.collapse-section');
+  if(cs) cs.style.display='none';
+}
+
+/* ════════════════════════════════════════════
+   COLLABORATIONS (brands collapsible)
+════════════════════════════════════════════ */
+const visibleCollabs = collaborations.filter(c => c.show !== false);
+if(visibleCollabs.length){
+  const cc = visibleCollabs.length===1?'col-lg-6 col-md-8':visibleCollabs.length===2?'col-md-6':'col-md-4 col-sm-6';
+  $('collabs-grid').innerHTML = visibleCollabs.map(c => renderCard(c, cc)).join('');
+} else {
+  const cs = document.querySelector('#collabs-body').closest('.collapse-section');
+  if(cs) cs.style.display='none';
+}
+
+/* ════════════════════════════════════════════
+   STATS ROW
+════════════════════════════════════════════ */
+const statItems = [
+  { num: stats.tiktokFollowers, label:'TikTok Followers' },
+  { num: stats.videosPublished, label:'Videos Published'  },
+  { num: '🌎',                  label:'Global Audience'   },
+  { num: stats.languages,       label:'Languages'         }
+].filter(s => s.num);
+$('stat-row').innerHTML = statItems.map(s =>
+  `<div class="stat-box"><div class="stat-num">${s.num}</div><div class="stat-label">${s.label}</div></div>`
+).join('');
+
+/* ════════════════════════════════════════════
+   REVIEWS
+════════════════════════════════════════════ */
+const visibleR = reviews.filter(r => r.show !== false);
+if(visibleR.length){
+  const rc = visibleR.length===1?'col-lg-6 col-md-8 mx-auto':visibleR.length===2?'col-md-6':'col-md-4';
+  $('reviews-grid').innerHTML = visibleR.map(r =>
+    `<div class="${rc}"><div class="review-card">
+      <p class="review-text">"${r.quote}"</p>
+      <div class="review-author">
+        <div class="review-avatar">${r.initials}</div>
+        <div><p class="review-name">${r.name}</p><p class="review-role">${r.title}</p></div>
+      </div>
+    </div></div>`
+  ).join('');
+} else {
+  const sec = $('reviews'); if(sec) sec.style.display='none';
+  const li = $('nav-reviews-li'); if(li) li.style.display='none';
+}
+
+/* ════════════════════════════════════════════
+   SOCIAL GRID
+════════════════════════════════════════════ */
+const socialDefs = [
+  { key:'tiktok',    icon:'fa-tiktok',    cls:'sc-tiktok',    handle:'@paodecrucero',      label:'TikTok'    },
+  { key:'instagram', icon:'fa-instagram', cls:'sc-instagram', handle:'@pao_entertainment', label:'Instagram' },
+  { key:'facebook',  icon:'fa-facebook',  cls:'sc-facebook',  handle:'HolaPao',            label:'Facebook'  },
+  { key:'linkedin',  icon:'fa-linkedin',  cls:'sc-linkedin',  handle:'Paola Solórzano',    label:'LinkedIn'  }
+].filter(s => social[s.key]);
+$('social-grid').innerHTML = socialDefs.map(s =>
+  `<a href="${social[s.key]}" target="_blank" rel="noopener" class="social-card ${s.cls}">
+    <i class="fa-brands ${s.icon}"></i>
+    <div><div style="font-size:.7rem;opacity:.7;font-weight:400">${s.label}</div>${s.handle}</div>
+  </a>`
+).join('');
+
+/* ════════════════════════════════════════════
+   CONTACT
+════════════════════════════════════════════ */
+if(site.googleFormUrl) $('contact-form-btn').href = site.googleFormUrl;
+const cSocials = [
+  { key:'instagram', icon:'fa-instagram', label:'Instagram' },
+  { key:'tiktok',    icon:'fa-tiktok',    label:'TikTok'    },
+  { key:'linkedin',  icon:'fa-linkedin',  label:'LinkedIn'  }
+].filter(s => social[s.key]);
+$('contact-social-links').innerHTML = cSocials.map(s =>
+  `<a href="${social[s.key]}" target="_blank" rel="noopener" class="btn-outline-gold" style="font-size:.83rem;padding:8px 20px;">
+    <i class="fa-brands ${s.icon} me-1"></i>${s.label}
+  </a>`
+).join('');
+
+/* ════════════════════════════════════════════
+   SUPPORT CARDS
+════════════════════════════════════════════ */
+let sc = [];
+if(site.kofiUrl) sc.push(`<div class="col-md-4 col-sm-6"><div class="support-card">
+  <div class="support-icon">☕</div><h4>Buy Me a Coffee</h4>
+  <p>Support Paola's content creation via Ko-fi.</p>
+  <a href="${site.kofiUrl}" target="_blank" class="btn-gold" style="font-size:.83rem;padding:9px 22px;">Ko-fi ☕</a>
+</div></div>`);
+if(site.amazonWishlistUrl) sc.push(`<div class="col-md-4 col-sm-6"><div class="support-card">
+  <div class="support-icon">🎁</div><h4>Amazon Wishlist</h4>
+  <p>Send Paola something she needs for life on the high seas!</p>
+  <a href="${site.amazonWishlistUrl}" target="_blank" class="btn-gold" style="font-size:.83rem;padding:9px 22px;">View Wishlist 🎁</a>
+</div></div>`);
+if(social.tiktok) sc.push(`<div class="col-md-4 col-sm-6"><div class="support-card">
+  <div class="support-icon">📲</div><h4>Share & Follow</h4>
+  <p>The best support is free — follow, like, and share her TikToks!</p>
+  <a href="${social.tiktok}" target="_blank" class="btn-gold" style="font-size:.83rem;padding:9px 22px;">Follow on TikTok</a>
+</div></div>`);
+$('support-cards').innerHTML = sc.join('');
+
+/* ════════════════════════════════════════════
+   LAZY-LOAD INSTAGRAM SCRIPT
+════════════════════════════════════════════ */
+const igObs = new IntersectionObserver((entries, obs) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      if(!window._igLoaded){
+        window._igLoaded = true;
+        const s = document.createElement('script');
+        s.src = 'https://www.instagram.com/embed.js'; s.async = true;
+        document.body.appendChild(s);
+      } else if(window.instgrm){ window.instgrm.Embeds.process(); }
+      obs.disconnect();
+    }
+  });
+}, { rootMargin:'200px' });
+const recSec = document.getElementById('recruiter');
+if(recSec) igObs.observe(recSec);
 </script>
-
 </body>
 </html>
