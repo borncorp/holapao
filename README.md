@@ -23,7 +23,7 @@ updates within a minute or two. Do not touch anything below `END OF CONFIGURATIO
 ### Config sections
 | Section | What it controls |
 |---|---|
-| `site` | `siteUrl`, `googleFormUrl` (contact form), `kofiUrl`, `amazonWishlistUrl` (empty string hides the button) |
+| `site` | `siteUrl`, `hirePaolaFormUrl` (professional bookings), `recruitmentFormUrl` (cruise job advice), `kofiUrl`, `amazonWishlistUrl` (empty string hides the button) |
 | `social` | TikTok, Instagram, Facebook, LinkedIn profile URLs |
 | `stats` | Hero numbers: `tiktokFollowers`, `videosPublished`, `languages` |
 | `assignments` | Ship contracts. Fields: `show`, `shipName`, `cruiseLine`, `startDate`, `endDate` |
@@ -38,6 +38,7 @@ updates within a minute or two. Do not touch anything below `END OF CONFIGURATIO
 - `tiktok` → add `"videoId": "1234567890"` (the number at the end of the TikTok URL)
 
 ### Common changes
+- Contact forms → change `site.hirePaolaFormUrl` or `site.recruitmentFormUrl` independently. Both currently use the same Google Form.
 - Follower count grew → update `stats.tiktokFollowers` (e.g. `"75K+"`).
 - New ship contract → add an object to `assignments`; old ones hide on their own via `endDate`.
 - New event or brand deal → append an object to `events` or `collaborations` with the right `type`.
@@ -56,4 +57,4 @@ meta tags that point at `images/MainPic.jpg`.
 
 ### Do not touch
 - `CNAME` (custom domain configuration)
-- Anything below `END OF CONFIGURATION` in `index.html`
+- Anything below `END OF CONFIGURATION` in `index.html` unless a layout or behavior change is explicitly requested
