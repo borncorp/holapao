@@ -121,7 +121,8 @@
   {
     "site": {
       "siteUrl":        "https://holapao.com.mx",
-      "googleFormUrl":  "https://forms.gle/K9RUsnf3eos3Fang8",
+      "hirePaolaFormUrl": "https://forms.gle/K9RUsnf3eos3Fang8",
+      "recruitmentFormUrl": "https://forms.gle/K9RUsnf3eos3Fang8",
       "kofiUrl":        "",
       "amazonWishlistUrl": ""
     },
@@ -402,6 +403,14 @@
     .stat-box{text-align:center;}
     .stat-box .stat-num{font-family:'Playfair Display',serif;font-size:2.1rem;font-weight:700;color:var(--gold);line-height:1;}
     .stat-box .stat-label{font-size:.75rem;color:#888;letter-spacing:1px;text-transform:uppercase;margin-top:.3rem;}
+
+    /* ── CONTACT CHOICES ── */
+    .contact-choice{height:100%;display:flex;flex-direction:column;align-items:flex-start;gap:.8rem;padding:2rem;border:1px solid rgba(201,168,76,.4);background:rgba(255,255,255,.07);border-radius:16px;}
+    .contact-choice-icon{font-size:1.8rem;color:var(--gold-light);}
+    .contact-choice h3{font-size:1.4rem;color:#fff;margin:0;}
+    .contact-choice p{font-size:.92rem;color:#ccc;line-height:1.7;flex:1;margin:0;}
+    .contact-choice .btn-gold{margin-top:.5rem;}
+    .contact-choice small{font-size:.73rem;color:#aaa;line-height:1.5;}
 
     /* ── REVIEWS ── */
     #reviews{background:var(--cream);}
@@ -694,11 +703,27 @@
 <section id="contact">
   <div class="container">
     <p class="section-label" style="color:var(--gold-light)">Get in Touch</p>
-    <h2 class="section-title">Bookings & Collabs</h2>
+    <h2 class="section-title">How Can We Help You?</h2>
     <div class="divider"></div>
-    <p style="color:#bbb;font-size:1rem;">Interested in a brand partnership, collaboration, or booking Paola for an event?<br>Fill out the form and she'll get back to you! 💛</p>
-    <div class="mt-4 mb-4">
-      <a id="contact-form-btn" href="#" target="_blank" rel="noopener" class="btn-gold" style="font-size:1rem;padding:13px 36px;">📋 Send an Inquiry</a>
+    <p style="color:#bbb;font-size:1rem;">Looking to hire Paola or start your adventure at sea? Choose what brings you here! 💛</p>
+    <div class="row g-4 justify-content-center mt-3 mb-4 text-start">
+      <div class="col-md-5">
+        <div class="contact-choice">
+          <div class="contact-choice-icon"><i class="fa-solid fa-star" aria-hidden="true"></i></div>
+          <h3>Hire Paola</h3>
+          <p>Book Paola for events, entertainment roles, brand collaborations, interviews, or other professional opportunities.</p>
+          <a id="hire-paola-form-btn" href="#" target="_blank" rel="noopener" class="btn-gold">Hire Paola <i class="fa-solid fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="contact-choice">
+          <div class="contact-choice-icon"><i class="fa-solid fa-ship" aria-hidden="true"></i></div>
+          <h3>Get a Cruise Ship Job</h3>
+          <p>Interested in working on a cruise ship? Get guidance on positions, requirements, and the application process.</p>
+          <a id="recruitment-form-btn" href="#" target="_blank" rel="noopener" class="btn-gold">Recruitment Advice <i class="fa-solid fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a>
+          <small>Recruitment guidance is independent. Employment is not guaranteed.</small>
+        </div>
+      </div>
     </div>
     <div class="d-flex justify-content-center gap-3 flex-wrap" id="contact-social-links"></div>
   </div>
@@ -926,7 +951,8 @@ $('social-grid').innerHTML = socialDefs.map(s =>
 /* ════════════════════════════════════════════
    CONTACT
 ════════════════════════════════════════════ */
-if(site.googleFormUrl) $('contact-form-btn').href = site.googleFormUrl;
+if(site.hirePaolaFormUrl) $('hire-paola-form-btn').href = site.hirePaolaFormUrl;
+if(site.recruitmentFormUrl) $('recruitment-form-btn').href = site.recruitmentFormUrl;
 const cSocials = [
   { key:'instagram', icon:'fa-instagram', label:'Instagram' },
   { key:'tiktok',    icon:'fa-tiktok',    label:'TikTok'    },
